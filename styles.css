@@ -1,0 +1,72 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #57579e;
+    font-family: monaco;
+    color: white;
+}
+
+#landing-area {
+width: 100%;
+margin: auto;
+}
+
+#navbar {
+    display: flex;
+    border: 2px solid #2c2c31;
+    background: linear-gradient(45deg, #2c2c31, #363670);
+}
+
+#navbar > ul {
+    position: relative;
+    left: 68%;
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+#navbar > ul > li > a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+#navbar > ul > li > a:hover {
+    color: antiquewhite;
+}
+
+#navbar > ul > li:hover {
+    transform: scale(1.5);
+    transition: 0.2s ease-in-out;
+}
+
+#welcome {
+    /* border: 2px solid aquamarine; */
+    margin: auto;
+    margin-top: 10%;
+    height: 500px;
+    width: 50%;
+}
+
+#welcome > .greetings {
+    position: relative;
+    margin: auto;
+    /* border: 2px solid red; */
+    width: 100%;
+    top: 20%;
+    font-size: 150%; 
+    display: flex;   
+    flex-direction: column;
+    place-items: center;
+    font-family: arial;
+    font-size: 250%;
+    text-align: center;
+    text-shadow: 2px 2px 3px black;
+}
+
+#welcome > .greetings > h1 {
+    display: flex;
+    place-i
+}
