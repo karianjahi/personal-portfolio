@@ -2,6 +2,7 @@
     --background-common: linear-gradient(#2c2c31, #363670, #2c2c31);
     --background-tile: linear-gradient(to right, #363671, #2e2e33, #1d1d27, #363671);
     --border-tile-color: #1d1d27;
+    --background-same-color: linear-gradient(#1d1d27);
 }
 
 html {
@@ -114,18 +115,31 @@ margin: auto;
     /* border: 2px solid green; */
 }
 
-#project-section > h2 {
+#project-section > .projects {
     border-radius: 15px;
     width: 40%;
     margin: auto;
     padding: 5%;
     background: var(--background-common);
-    text-transform: uppercase;
     font-weight: bolder;
     display: flex;
+    flex-direction: column;
     place-items: center;
     place-content: center;
+    overflow: hidden;
 }
+
+#project-section > .projects > h2 {
+        text-transform: uppercase;
+        background: var(--background-same-color);
+        border-radius: 10px;
+        width: 100%;
+        display: flex;
+        place-items: center;
+        place-content: center;
+        padding: 3%;
+}
+
 
 #project-tiles {
     display: grid;
@@ -136,7 +150,7 @@ margin: auto;
     margin: 5%;
     }
 
-.project-tile {
+.project-tile{
     /* border: 2px solid black; */
     width: 100%;
     padding: 0%;
@@ -145,6 +159,9 @@ margin: auto;
     height: 200px;
 }
 
+.category {
+    width: 100%;
+}
 
 #project-tile-text{
     background: var(--background-tile);
@@ -171,7 +188,7 @@ margin: auto;
     text-align: center;
     font-size: 100%;
     /* border: 2px solid rgb(53, 7, 2); */
-    background: linear-gradient(#1d1d27);
+    background: var(--background-same-color);
     border-radius: 5px;
     height: 35%;
     display: flex;
@@ -187,3 +204,21 @@ margin: auto;
     color: white;
     text-decoration: none;
 }
+
+@media screen and (max-width: 1000px) {
+    #navbar > ul {
+        flex-direction: column;
+        left: 30%;
+        top: 10%;
+        
+    }
+
+    .scroll-container {
+        top: 0%;
+    }
+
+    #project-tiles {
+        grid-template-columns: 1fr;
+    }
+};
+    
