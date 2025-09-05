@@ -26,11 +26,16 @@ margin: auto;
     border: 2px solid #2c2c31;
     background: linear-gradient(45deg, #2c2c31, #363670);
     border-radius: 5px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+ 
 }
 
 #navbar > ul {
     position: relative;
-    left: 68%;
+    left: 50%;
     display: flex;
     gap: 40px;
     list-style: none;
@@ -55,7 +60,7 @@ margin: auto;
       white-space: nowrap; /* Text must stay in one line*/
       animation: scroll-hole 20s linear infinite;
       color: white;
-      /* background: linear-gradient(45deg, black, black); */
+       background: var(--border-tile-color)
     }
 
   @keyframes scroll-hole {
@@ -84,14 +89,14 @@ margin: auto;
     transition: 0.8s ease-in-out;
 }
 
-#welcome {
+#welcome-section {
     margin: auto;
     margin-top: 10%;
     height: 100vh;
     width: 50%;
 }
 
-#welcome > .greetings {
+#welcome-section > .greetings {
     background: var(--background-common);
     position: relative;
     margin: auto;
