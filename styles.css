@@ -1,9 +1,12 @@
 :root {
     --background-common: linear-gradient(#2c2c31, #363670, #2c2c31);
+    --background-tile: linear-gradient(to right, #363671, #2e2e33, #1d1d27, #363671);
+    --border-tile-color: #1d1d27;
 }
 
 html {
     box-sizing: border-box;
+
 }
 
 body {
@@ -21,6 +24,7 @@ margin: auto;
     display: flex;
     border: 2px solid #2c2c31;
     background: linear-gradient(45deg, #2c2c31, #363670);
+    border-radius: 5px;
 }
 
 #navbar > ul {
@@ -76,7 +80,7 @@ margin: auto;
 
 #navbar > ul > li:hover {
     transform: scale(1.5);
-    transition: 0.2s ease-in-out;
+    transition: 0.8s ease-in-out;
 }
 
 #welcome {
@@ -100,6 +104,7 @@ margin: auto;
     font-size: 250%;
     text-align: center;
     text-shadow: 2px 2px 3px black;
+    border-radius: 15px;
 }
 
 
@@ -110,23 +115,75 @@ margin: auto;
 }
 
 #project-section > h2 {
-    width: 33%;
+    border-radius: 15px;
+    width: 40%;
     margin: auto;
     padding: 5%;
     background: var(--background-common);
     text-transform: uppercase;
     font-weight: bolder;
+    display: flex;
+    place-items: center;
+    place-content: center;
 }
 
 #project-tiles {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    border: 2px solid black;
-}
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    padding: 0.5%;
+    width: 90%;
+    margin: 5%;
+    }
 
 .project-tile {
-    border: 2px solid black;
-    width: 50%;
-    row-gap: 20px;
+    /* border: 2px solid black; */
+    width: 100%;
+    padding: 0%;
+    place-items: center;
+    text-align: center;
+    height: 200px;
+}
+
+
+#project-tile-text{
+    background: var(--background-tile);
     padding: 5%;
+    width: 70%;
+    height: 70%;
+    transition: 1s ease-in-out;
+    border-radius: 15px;
+    border: 2px solid var(--border-tile-color);
+    
+}
+
+#project-tile-text:hover{
+    transform: scale(1.2);
+}
+
+
+
+#project-tiles h2 {
+    position: relative;
+    left: -0%;
+    width: 95%;
+    margin: auto;
+    text-align: center;
+    font-size: 100%;
+    /* border: 2px solid rgb(53, 7, 2); */
+    background: linear-gradient(#1d1d27);
+    border-radius: 5px;
+    height: 35%;
+    display: flex;
+    place-content: center;
+    place-items: center;
+}
+
+#project-tiles p {
+    font-size: 90%;
+    
+}
+.repo {
+    color: white;
+    text-decoration: none;
 }
