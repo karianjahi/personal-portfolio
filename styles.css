@@ -1,8 +1,10 @@
 :root {
     --background-common: linear-gradient(#2c2c31, #363670, #2c2c31);
-    --background-tile: linear-gradient(to right, #363671, #2e2e33, #1d1d27, #363671);
+    /* --background-tile: linear-gradient(to right, #363671, #2e2e33, #1d1d27, #363671); */
+    --background-tile: linear-gradient(to right, #2e2e33, #363670,#2e2e33);
     --border-tile-color: #1d1d27;
     --background-same-color: linear-gradient(#1d1d27);
+    --font-family: monaco;
 }
 
 html {
@@ -12,7 +14,7 @@ html {
 
 body {
     background-color: #57579e;
-    font-family: monaco;
+    font-family: var(--font-family);
     color: white;
 }
 
@@ -46,21 +48,24 @@ margin: auto;
      display: flex;
      align-items: center;
      justify-content: center;
-      width: 500px;
+      width: 300px;
       height: 30px;
       overflow: hidden;       /*Hide text outside the hole*/
       position: absolute;
       top: 2%;
       left: 2%;
+      background: var(--border-tile-color);
+      /* background: var(--background-common); */
+      border-radius: 5px;
 
     }
 
     .scrolling-text {
       position: absolute;
       white-space: nowrap; /* Text must stay in one line*/
-      animation: scroll-hole 20s linear infinite;
+      animation: scroll-hole 25s linear infinite;
       color: white;
-       background: var(--border-tile-color)
+      width: 600px;
     }
 
   @keyframes scroll-hole {
@@ -121,10 +126,11 @@ margin: auto;
 }
 
 #project-section > .projects {
+    position: relative;
     border-radius: 15px;
     width: 40%;
     margin: auto;
-    padding: 5%;
+    padding: 2%;
     background: var(--background-common);
     font-weight: bolder;
     display: flex;
@@ -132,17 +138,18 @@ margin: auto;
     place-items: center;
     place-content: center;
     overflow: hidden;
+    top: 6%;
 }
 
 #project-section > .projects > h2 {
         text-transform: uppercase;
-        background: var(--background-same-color);
+        /* background: var(--background-same-color); */
         border-radius: 10px;
         width: 100%;
         display: flex;
         place-items: center;
         place-content: center;
-        padding: 3%;
+        
 }
 
 
@@ -171,7 +178,7 @@ margin: auto;
 #project-tile-text{
     background: var(--background-tile);
     padding: 5%;
-    width: 70%;
+    width: 80%;
     height: 70%;
     transition: 1s ease-in-out;
     border-radius: 15px;
@@ -202,7 +209,7 @@ margin: auto;
 }
 
 #project-tiles p {
-    font-size: 90%;
+    font-size: 85%;
     
 }
 .repo {
