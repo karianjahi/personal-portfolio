@@ -251,7 +251,7 @@ margin: auto;
     text-align: justify;
     border-radius: 15px;
 }
-.about-me h2 {
+.about-me > h2, .life-history {
     background: var(--background-common);
     font-size: 150%;
     font-weight: bolder;
@@ -265,6 +265,35 @@ margin: auto;
     border-radius: 10px;
     /* border: 2px solid #1d1d27; */
     width: 70%;
+}
+
+.life-history {
+    width: 70%;
+}
+
+.life-history > h2 {
+    margin: auto;
+    display: flex;
+    place-content: center;
+    background: var(--background-common);
+    width: 40%;
+    padding: 2.5%;
+}
+
+.life-history > ul {
+    text-transform: none;
+    font-size: 75%;
+}
+
+
+
+.life-history li {
+    font-size: 80%;
+    margin-bottom: 15px;
+}
+
+.life-history span {
+    background-color: #1d1d27;
 }
 
 /* .about-me p:hover {
@@ -293,4 +322,43 @@ margin: auto;
 #contact h2 {
     text-transform: uppercase;
     border-radius: 10px;
+}
+
+#contact address p:nth-child(1)::before {
+    content: "👤";
+    position: relative;
+}
+
+#contact address p:nth-child(2)::before {
+    content: "🏠";
+    position: relative;
+}
+
+#contact address p:nth-child(3)::before {
+    content: "📍";
+    position: relative;
+}
+
+#contact address p:nth-child(4)::before {
+    content: "📞";
+    position: relative;
+    background-color: white;
+}
+
+#contact address p:nth-child(5)::before {
+    content: "📧";
+    position: relative;
+}
+
+#contact a {
+    color: white;
+    text-decoration: none;
+}
+
+
+#contact a:hover {
+    color: #2e2e33;
+    background-color: white;
+    text-decoration: none;
+    transform: scale(1.5);
 }
