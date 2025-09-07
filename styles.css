@@ -267,8 +267,14 @@ margin: auto;
     width: 70%;
 }
 
+.about-me a {
+    color: white;
+    background-color: rgb(92, 56, 56);
+    text-decoration: none;
+}
 .life-history {
     width: 70%;
+    text-align: justify;
 }
 
 .life-history > h2 {
@@ -278,6 +284,7 @@ margin: auto;
     background: var(--background-common);
     width: 40%;
     padding: 2.5%;
+    font-size: 150%;
 }
 
 .life-history > ul {
