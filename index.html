@@ -4,36 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
-    <link href="styles.css" rel="stylesheet">
+    <title>Portfolio</title>
+    <link href="temporary.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <main>
-        <header id="landing-area">
-            <nav id="navbar">
-                <div class="scroll-container">
-                    <div class="scrolling-text">
-                        Full stack development and AI are the future of tech. The quicker you get on board the better
-                    </div>
-                </div>
-                <ul>
-                    <li><a href="#welcome-section">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#project-section">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <section id="welcome-section">
-            <div class="greetings">
-                <h1>Hello,</h1>
-                <p>I am Joseph,a Data Scientist with interests in full stack software development</p>
-                <p id="second-greeting-message">Welcome to my home page and learn more about me, my background, what I am currently upto in tech research, and what projects are lined-up for the future</p>
-            </div>
-        </section>
-        <section id="about" class="about-me">
+    <header>
+        <h1>Dr.rer.nat Joseph Njeri</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <div id="welcome-message">
+            <h2>Welcome Message</h2>
+            <p>
+                Hi, I’m Joseph Njeri — a passionate Data Scientist and Full-Stack Developer blending advanced analytics
+                with modern web development. With expertise in machine learning, Django, Flask, React, and PostgreSQL, I
+                build intelligent applications that transform data into actionable insights. I believe the future of
+                technology lies in the fusion of AI and full-stack development — and the sooner you get on board, the
+                better. Explore my projects to see how I turn ideas into impactful solutions, from investment apps to
+                interactive web designs.
+            </p>
+            <p>
+                Let’s create something extraordinary together
+            </p>
+            <img id=welcome-image
+                src="https://media.istockphoto.com/id/2210858896/photo/software-engineer-and-software-development-concepts-programming-for-various-devices-computer.jpg?s=1024x1024&w=is&k=20&c=uEUGnKpvgPOZhSdzF7NkcEgukPg60axR2RibI4m8pNs="
+                alt="pixaby-fullstack">
+        </div>
+    </section>
+    <section id="about">
+        <div class="about-me">
             <h2>About Me</h2>
             <p>
                 I am Joseph Njeri and I am a full stack software developer and data scientist. My background combines
@@ -42,11 +50,15 @@
                 front-end design.
             </p>
             <p>
-                However, my profession hasn't always been in Tech. My academic background is in atmospheric science. I hold
-                a Doctor of Natural Sciences (Dr. rer. nat) in Atmospheric Physics and Dynamics from the Karlsruhe Institute
-                of Technology (2015–2019), where I researched the diagnosis and simulation of extreme precipitation events
+                However, my profession hasn't always been in Tech. My academic background is in atmospheric science. I
+                hold
+                a Doctor of Natural Sciences (Dr. rer. nat) in Atmospheric Physics and Dynamics from the Karlsruhe
+                Institute
+                of Technology (2015–2019), where I researched the diagnosis and simulation of extreme precipitation
+                events
                 over Kenya. Before that, I earned a Master of Science in Meteorology from the University of Nairobi
-                (2010–2012), focusing on assessing the predictability of rainfall using tropical convection indices, and a
+                (2010–2012), focusing on assessing the predictability of rainfall using tropical convection indices, and
+                a
                 Bachelor of Science in Meteorology from the same institution (2005–2009).
             </p>
             <p>
@@ -55,7 +67,8 @@
                 Framework and Flask to build APIs and data-driven applications, while also drawing on a strong
                 foundation in PostgreSQL and MongoDB. On the frontend, I am self-taught in HTML, CSS, JavaScript, and
                 React, continuously building responsive, interactive projects that showcase how design and functionality
-                come together. Alongside this, I have also work as a trainer and curriculum developer at neuefische GmbH,
+                come together. Alongside this, I have also work as a trainer and curriculum developer at neuefische
+                GmbH,
                 mentoring students and preparing them for industry roles.
                 Some of my selected GitHub projects and ongoing work can be found <a id="my-projects"
                     href="#project-section">here</a>
@@ -70,360 +83,175 @@
                 I live in Karlsruhe, Germany, and I am always open to collaborations, research, or projects at the
                 intersection of full stack software development and data science.
             </p>
-            <div class="life-history">
-                <h2>Life History</h2>
-                <ul>
-                    <li><span>1985</span>: Born in Muranga Hospital, Muranga County Kenya</li>
-                    <li><span>1988 - 1989</span>: Kiumu Nursery School, Kahuro, Kenya</li>
-                    <li><span>1990 - 1991</span>: Gitiri Nursery School, Kahuro, Kenya</li>
-                    <li><span>1992-1999</span>: Gitiri Primary School</li>
-                    <li><span>2000-2003</span>: Mugoiri Boys Secondary School</li>
-                    <li><span>2003-2005</span>: Waiting time to join university</li>
-                    <li><span>2005-2009</span>: Enrols and completes a Bachelor of Science (Meteorology) at the University of Nairobi and graduates with a First Class Honours</li>
-                    <li><span>2009-2010</span>: Secures a research internship placement at the IGAD Climate Predictions and Applications Center (ICPAC), Nairobi</li>
-                    <li><span>2010-2012</span>: Secures a DAAD Scholarship to pursue a Master of Science (Meteorology) at the University of Nairobi while still maintaining placement at the IGAD Climate Predictions and Applications Center (ICPAC), Nairobi</li>
-                    <li><span>2012 Feb - 2012 May</span>: Travels to the Free University of Berlin, Germany under the DAAD Exchange Programme to finalize research project </li>
-                    <li><span>2012</span>: Graduates with a Master of Science (Meteorology) at the University of Nairobi </li>
-                    <li><span>2013 Jan - 2023 Aug </span>: Secures part-time teaching job at the South Eastern Kenya University in the Department of Meteorology</li>
-                    <li><span>2013 Sep - 2024 Oct</span>: Employed formally as a full-time tutorial fellow at the South Eastern Kenya University in the Department of Meteorology</li>
-                    <li><span>2014 Oct</span>: Secures another DAAD Scholarship to pursue studies at the Karlsruhe Institute of Technology, Karlsruhe, Germany</li>
-                    <li><span>2014 Oct</span>: Secures a permanent and pensionable placement as an Assistant Lecturer at the University of Eldoret's department of environmental sciences</li>
-                    <li><span>2015 Apr</span>: Secures a paid study leave from the University of Eldoret</li>
-                    <li><span>2015 Apr</span>: Enrols for a German Language Course at the Goethe Institute, Nairobi in preparation to travel to Karlsruhe, Germany to pursue doctorate studies</li>
-                    <li><span>2015 Jun30</span>: Secures Language Certificate grade A1 from Goethe Institute. Departs Nairobi, Kenya for Leipzig Germany</li>
-                    <li><span>2015 Jul - 2025 Sep</span>: Enrols and continues furthering Language studies at the interDaf - Universität Leipzig and completes the course with a German B1 Level certificate</li>
-                    <li><span>2015 Oct</span>: Departs Leipzig for Karlsruhe to enrol for Doctor of Natural Sciences at the Institute of Meteorology and Climate Research which is an institute within the broader Karlsruhe Insitute of Technology</li>
-                    <li><span>2019 May</span>: Graduates with a doctor of Natural Sciences from the Karlsruhe Institute of Technology</li>
-                    <li><span>2019 May</span>: Graduates with a doctor of Natural Sciences from the Karlsruhe Institute of Technology. Declines a return to the University of Eldoret and decides to stay in Germany to look for work</li>
-                    <li><span>2019 Jul</span>: Secures first Data Scientist Job at Engineering Data Intelligence (EDI GmbH) in Karlsruhe</li>
-                    <li><span>2021 Jun</span>: Leaves EDI GmbH and under the sponsorship of the Agent for work in Karlsruhe enrols for a 3 month data science bootcamp at Spiced Academy, Berlin offering online teaching</li>
-                    <li><span>2021 Sep</span>: Successfully completes Bootcamp and offered a Junior Data Science teaching role within the Academy but location Stuttgart</li>
-                    <li><span>2022 Jul</span>: Stuttgart branch closes and re-engaged for the same role purely online</li>
-                    <li><span>2023 Sep</span>: Promoted to Mid-Level Coach</li>
-                    <li><span>2025 Jul</span>: Laid-off under an aggressive restructuring plan</li>
-                    <li><span>2025 Aug</span>: Engaged in continuous self-learning with a focus on Full-Stack Development</li>
-                    
-                    
+        </div>
+        <div class="about-me life">
+            <h2>Life History</h2>
+            <ul>
+                <li><strong>1985</strong>: Born at Murang’a Hospital, Murang’a Town, Murang’a County, Kenya.</li>
+                <li><strong>1988 – 1989</strong>: Attended Kiumu Nursery School, Kahuro, Kenya.</li>
+                <li><strong>1990 – 1991</strong>: Transferred to Gitiri Nursery School, Kahuro, where I completed
+                    pre-primary education.</li>
+                <li><strong>1992 – 1999</strong>: Attended Gitiri Primary School and successfully earned the Kenya
+                    Certificate of Primary Education (KCPE).</li>
+                <li><strong>2000 – 2003</strong>: Studied at Mugoiri Boys Secondary School and earned the Kenya
+                    Certificate of Secondary Education (KCSE).</li>
+                <li><strong>2003 – 2005</strong>: Took a gap period while waiting to join university, during which I
+                    volunteered as a teacher at Mugoiri Boys Secondary School.</li>
+                <li><strong>2005 – 2009</strong>: Enrolled at the University of Nairobi, graduating with a
+                    <strong>Bachelor of Science in Meteorology (First Class Honours)</strong>.
+                </li>
+                <li><strong>2009 – 2010</strong>: Joined IGAD Climate Predictions and Applications Center (ICPAC),
+                    Nairobi, as a research mentee.</li>
+                <li><strong>2010 – 2012</strong>: Awarded a DAAD Scholarship to pursue a <strong>Master of Science in
+                        Meteorology</strong> at the University of Nairobi while continuing mentorship at ICPAC.</li>
+                <li><strong>Feb – May 2012</strong>: Participated in a DAAD Exchange Programme at the Free University of
+                    Berlin, Germany, to complete MSc research work.</li>
+                <li><strong>Sep 2012</strong>: Graduated with a <strong>Master of Science in Meteorology</strong> from
+                    the University of Nairobi.</li>
+                <li><strong>Sep – Dec 2012</strong>: Continued mentorship at ICPAC.</li>
+                <li><strong>Jan 2013 – Aug 2023</strong>: Worked part-time as a lecturer at the School of Earth
+                    Sciences, South Eastern Kenya University (SEKU), Kitui.</li>
+                <li><strong>Sep 2013</strong>: Formally appointed as a full-time Tutorial Fellow at SEKU.</li>
+                <li><strong>Oct 2014</strong>:
+                    <ul>
+                        <li>Awarded a second DAAD Scholarship to pursue doctoral studies at the <strong>Karlsruhe
+                                Institute of Technology (KIT), Germany</strong>, while still teaching at SEKU.</li>
+                        <li>Secured a permanent, pensionable appointment as <strong>Assistant Lecturer</strong> at the
+                            University of Eldoret, School of Environmental Sciences.</li>
+                    </ul>
+                </li>
+                <li><strong>Apr – Jun 2015</strong>:
+                    <ul>
+                        <li>Granted a paid study leave by the University of Eldoret to pursue doctoral studies.</li>
+                        <li>Completed a German language course at Goethe Institute, Nairobi, achieving <strong>A1
+                                certification</strong>.</li>
+                        <li>Departed Nairobi, Kenya, for Leipzig, Germany.</li>
+                    </ul>
+                </li>
+                <li><strong>Jul – Sep 2015</strong>: Continued German language studies at interDaF, Universität Leipzig,
+                    earning a <strong>B1 German Language Certificate</strong>.</li>
+                <li><strong>Oct 2015</strong>:
+                    <ul>
+                        <li>Relocated to Karlsruhe to enroll for a <strong>Doctor of Natural Sciences
+                                (Dr.rer.nat)</strong> at KIT’s Institute of Meteorology and Climate Research.</li>
+                        <li>Appointed by Prof. Andreas Fink as <strong>Assistant Data Manager</strong> at the Karlsruhe
+                            African Surface Station Database (KASSD).</li>
+                    </ul>
+                </li>
+                <li><strong>May 2019</strong>:
+                    <ul>
+                        <li>Graduated with a <strong>Doctor of Natural Sciences (Dr.rer.nat)</strong> from KIT.</li>
+                        <li>Declined return to the University of Eldoret and opted to remain in Germany for work
+                            opportunities.</li>
+                    </ul>
+                </li>
+                <li><strong>May – Jul 2019</strong>: Continued as Assistant Data Manager at KASSD.</li>
+                <li><strong>Jul 2019</strong>: Secured first Data Scientist role at <strong>Engineering Data
+                        Intelligence (EDI GmbH)</strong>, Karlsruhe.</li>
+                <li><strong>Jun 2021</strong>: Left EDI GmbH and, through the Agentur für Arbeit, enrolled in a 3-month
+                    Data Science bootcamp at <strong>Spiced Academy, Berlin</strong> (online).</li>
+                <li><strong>Sep 2021</strong>: Completed the bootcamp and was offered a <strong>Junior Data Science
+                        Teaching Role</strong> at Spiced Academy, Stuttgart branch.</li>
+                <li><strong>Jul 2022</strong>: Stuttgart branch closed, but I continued in the same teaching role fully
+                    online.</li>
+                <li><strong>Sep 2023</strong>: Promoted to <strong>Mid-Level Data Science Coach</strong>.</li>
+                <li><strong>Jul 2025</strong>: Laid off during company restructuring.</li>
+                <li><strong>Aug 2025 – present</strong>: Focused on <strong>self-learning in Full-Stack
+                        Development</strong>.</li>
+            </ul>
 
 
-                
+        </div>
+    </section>
 
+    <section id="projects">
+        <h2>Selected gitHub Projects</h2>
+        <div class="gridding">
+            <div class="category">
+                <h3>Data Engineering/Data Science</h3>
+                <a href="https://github.com/karianjahi/ifb2024" target="_blank" id="ifb" class="repo-link">
 
-                    
+                    <div class="repos">
+                        <div id="ifb" class="specific-project">
+                            <h4>IFB 2024 Bond</h4>
+                            <p>Calculate returns, amortization schedules, and investment insights</p>
+                        </div>
+                </a>
 
-                </ul>
+                <a href="https://github.com/karianjahi/compounding_investment" target="_blank" id="compounding"
+                    class="repo-link">
+                    <div id="investment" class="specific-project">
+                        <h4>Investment Returns App</h4>
+                        <p>Django-REST framework powered app to calculate compound interest delivered by API</p>
+                    </div>
+                </a>
 
+                <a href="https://github.com/karianjahi/tic-tac-toe-game" target="_blank" id="tic-tac-toe"
+                    class="repo-link">
+                    <div id="game-logic" class="specific-project">
+                        <h4>Game Logic</h4>
+                        A simple two-player Tic-Tac-Toe game playable through the Unix terminal
+                    </div>
+                </a>
+                <a href="https://github.com/karianjahi/movie_recommender_app" target="_blank" id="movie-repo"
+                    class="repo-link">
+                    <div id="movie-recommender" class="specific-project">
+                        <h4>Movie Recommender</h4>
+                        Recommends movies based on various statistical methods including clustering, PCA and
+                        Matrix Factorization
+                    </div>
+                </a>
             </div>
-        </section>
-        <section id="background"></section>
-        <section id="project-section">
-            <div class="projects">
-                <h2>
-                    Selected GitHub projects and ongoing work
-                </h2>
+        </div>
+
+        <div class="category">
+            <h3>Frontend - HTML/CSS/JavaScript/React</h3>
+            <div class="repos">
+                <a href="https://github.com/karianjahi/flappy-penguin" target="_blank" id="flappy-penguin"
+                    class="repo-link">
+                    <div id="flappy-penguin" class="specific-project">
+                        <h4>Flappy Penguin</h4>
+                        <p>
+                            A visually engaging animation of a penguin flapping its left wing created with HTML and
+                            CSS
+                        </p>
+                    </div>
+                </a>
+                <a href="https://github.com/karianjahi/trombones-sale-css-grid" target="_blank" id="trombone-sales"
+                    class="repo-link">
+                    <div id="sales-page" class="specific-project">
+                        <h4>Trombone Sales Landing Page</h4>
+                        <p>
+                            Demonstration of how CSS flexbox and grid can combine to create a responsive sales page
+                        </p>
+                    </div>
+                </a>
+
+                <a href="https://github.com/karianjahi/django-drf-responsive-technical-doc-css" target="_blank"
+                    id="documentation" class="repo-link">
+                    <div id="documentation" class="specific-project">
+                        <h4>Technical Documentation</h4>
+                        <p>
+                            How to create a technical documentation page that responds to different screen sizes.
+                            Case study: Django Rest Framework
+                        </p>
+                    </div>
+                </a>
+                <a href="https://github.com/karianjahi/moon-orbit-animation" target="_blank" id="moon"
+                    class="repo-link">
+                    <div id="moon-orbit" class="specific-project">
+                        <h4>Moon Orbit</h4>
+                        <p>
+                            A visually engaging animation of the orbit of the moon around the earth using pure HTML
+                            and CSS
+                        </p>
+                    </div>
+                    </a>
             </div>
+        </div>
+        </div>
 
-            <div id="project-tiles">
-                <div class="project-tile">
-                    <div id="project-tile-text">
-                        <a href="https://github.com/karianjahi/ifb2024" target="_blank" id="profile-link" class="repo">
-                            <h2>IFB 2024 Bond</h2>
-                            <p>
-                                Calculate returns, amortization schedules, and investment insights
-                            </p>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="project-tile">
-                    <div id="project-tile-text">
-                        <a href="https://github.com/karianjahi/compounding_investment" target="_blank"
-                            id="compounding-repo" class="repo">
-                            <h2>Investment Returns App</h2>
-                            <p>
-                                Django-REST framework powered app to calculate compound interest delivered by API
-                            </p>
-                        </a>
-                    </div>
-                </div>
-                <div class="project-tile">
-                    <div id="project-tile-text">
-                        <a href="https://github.com/karianjahi/tic-tac-toe-game" target="_blank" id="tic-tac-toe-repo"
-                            class="repo">
-                            <h2>Game Logic</h2>
-                            <p>
-                                A simple two-player Tic-Tac-Toe game playable through the Unix terminal
-                            </p>
-                        </a>
-                    </div>
-                </div>
-                <div class="project-tile">
-                    <div id="project-tile-text">
-                        <a href="https://github.com/karianjahi/movie_recommender_app" target="_blank"
-                            id="movie-recommender-repo" class="repo">
-                            <h2>Movie Recommender</h2>
-                            <p>
-                                Recommends movies based on various statistical methods including clustering, PCA and
-                                Matrix Factorization
-                            </p>
-                        </a>
-                    </div>
-                </div>
-                <div class="project-tile">
-                    <div id="project-tile-text">
-                        <a href="https://github.com/karianjahi/moon-orbit-animation" target="_blank"
-                            id="moon-orbit-repo" class="repo">
-                            <h2>Moon Orbit</h2>
-                            <p>
-                                A visually engaging animation of the orbit of the moon around the earth using pure HTML
-                                and CSS
-                            </p>
-                        </a>
-                    </div>
-                </div>
-                <div class="project-tile">
-                    <div id="project-tile-text">
-                        <a href="https://github.com/karianjahi/flappy-penguin" target="_blank" id="mflappy-penguin-repo"
-                            class="repo">
-                            <h2>Flappy Penguin</h2>
-                            <p>
-                                A visually engaging animation of a penguin flapping its left wing created with HTML and
-                                CSS
-                            </p>
-                        </a>
-                    </div>
-                </div>
-                <div class="project-tile">
-                    <div id="project-tile-text">
-                        <a href="https://github.com/karianjahi/trombones-sale-css-grid" target="_blank"
-                            id="trombone-sales" class="repo">
-                            <h2>Sales landing page</h2>
-                            <p>
-                                Demonstration of how CSS flexbox and grid can combine to create a responsive sales page
-                            </p>
-                        </a>
-                    </div>
-                </div>
-                <div class="project-tile">
-                    <div id="project-tile-text">
-                        <a href="https://github.com/karianjahi/magazine-layout-using-css-grid" target="_blank"
-                            id="magazine-layout" class="repo">
-                            <h2>Magazine</h2>
-                            <p>
-                                Demonstration of how CSS grid can create a magazine layout
-                            </p>
-                        </a>
-                    </div>
-                </div>
-                <div class="project-tile">
-                    <div id="project-tile-text">
-                        <a href="https://github.com/karianjahi/css-variables-build-city-skyline" target="_blank"
-                            id="skyline" class="repo">
-                            <h2>City Skyline</h2>
-                            <p>
-                                Create a responsive city skyline: Responsive design and CSS variables
-                            </p>
-                        </a>
-                    </div>
-                </div>
-                <div class="project-tile">
-                    <div id="project-tile-text">
-                        <a href="https://github.com/karianjahi/django-drf-responsive-technical-doc-css" target="_blank"
-                            id="technical-doc" class="repo">
-                            <h2>Technical Documentation</h2>
-                            <p>
-                                How to create a technical documentation page that responds to different screen sizes.
-                                Case study: Django Rest Framework
-                            </p>
-                        </a>
-                    </div>
-                </div>
-                <div class="project-tile">
-                    <div id="project-tile-text">
-                        <a href="https://github.com/karianjahi/book-inventory-app" target="_blank" id="book-inventory"
-                            class="repo">
-                            <h2>Book Inventory</h2>
-                            <p>
-                                Creating a book inventory table: Demonstrates how to create a responsive web design
-                                using semantic HTML and attribute selectors
-                            </p>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="project-tile">
-                    <div id="project-tile-text">
-                        <a href="https://github.com/karianjahi/css-positioning-house-painting" target="_blank"
-                            id="positioning" class="repo">
-                            <h2>House Painting</h2>
-                            <p>
-                                Demonstration of positioning of elements using CSS by painting a house
-                            </p>
-                        </a>
-                    </div>
-                </div>
-                <div class="project-tile">
-                    <div id="project-tile-text">
-                        <a href="https://github.com/karianjahi/css-accessibility-webpage-quiz" target="_blank"
-                            id="web-quiz" class="repo">
-                            <h2>Web Quiz</h2>
-                            <p>
-                                How to create a web quiz and demonstrate ARIA
-                            </p>
-                        </a>
-                    </div>
-                </div>
-                <div class="project-tile">
-                    <div id="project-tile-text">
-                        <a href="https://github.com/karianjahi/css-accessibility-tribute-page" target="_blank"
-                            id="tribute-page" class="repo">
-                            <h2>Tribute Page</h2>
-                            <p>
-                                ARIA labels used in building a tribute page
-                            </p>
-                        </a>
-                    </div>
-                </div>
-                <div class="project-tile">
-                    <div id="project-tile-text">
-                        <a href="https://github.com/karianjahi/css-attribute-selectors-balance-sheet" target="_blank"
-                            id="balance-sheet" class="repo">
-                            <h2>Balance Sheet</h2>
-                            <p>
-                                CSS attribute selectors usage in creating a financial document: A balance sheet
-                            </p>
-                        </a>
-                    </div>
-                </div>
-                <div class="project-tile">
-                    <div id="project-tile-text">
-                        <a href="https://github.com/karianjahi/css-flex-box-photo-gallery" target="_blank"
-                            id="photo-gallery" class="repo">
-                            <h2>Photo Gallery</h2>
-                            <p>
-                                How flexbox makes it easier to arrange images on a page.
-                            </p>
-                        </a>
-                    </div>
-                </div>
-                <div class="project-tile">
-                    <div id="project-tile-text">
-                        <a href="https://github.com/karianjahi/confidential-email-page" target="_blank" id="box-model"
-                            class="repo">
-                            <h2>Confidential Email</h2>
-                            <p>
-                                How to use the Box Model to create a confidential email.
-                            </p>
-                        </a>
-                    </div>
-                </div>
-                <div class="project-tile">
-                    <div id="project-tile-text">
-                        <a href="https://github.com/karianjahi/css-typography-nutrition-labels" target="_blank"
-                            id="nutrion-labels" class="repo">
-                            <h2>Nutrition Labels</h2>
-                            <p>
-                                Using attribute selectors and Semantic design to create nutrional labels
-                            </p>
-                        </a>
-                    </div>
-                </div>
-                <div class="project-tile">
-                    <div id="project-tile-text">
-                        <a href="https://github.com/karianjahi/signup-page" target="_blank" id="sign-up" class="repo">
-                            <h2>Sign-Up Page</h2>
-                            <p>
-                                Demonstration of how to implement file uploads and styling forms in HTML
-                            </p>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="project-tile">
-                    <div id="project-tile-text">
-                        <a href="https://github.com/karianjahi/job-application-form" target="_blank" id="job"
-                            class="repo">
-                            <h2>Job Application</h2>
-                            <p>
-                                A simple user-friendly job application form
-                            </p>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="project-tile">
-                    <div id="project-tile-text">
-                        <a href="https://github.com/karianjahi/contact_form" target="_blank" id="contact-form"
-                            class="repo">
-                            <h2>Contact form</h2>
-                            <p>
-                                A simplified way of creating a contact form for a company to gather feedback about
-                                issues
-                            </p>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="project-tile">
-                    <div id="project-tile-text">
-                        <a href="https://github.com/karianjahi/greeting-card-css" target="_blank" id="greetings-card"
-                            class="repo">
-                            <h2>Greetings Card</h2>
-                            <p>
-                                Using Pseudo-classes and Pseudo-elements to create a simple responsive birthday online
-                                card.
-                            </p>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="project-tile">
-                    <div id="project-tile-text">
-                        <a href="https://github.com/karianjahi/css-colored-boxes" target="_blank" id="color-boxes"
-                            class="repo">
-                            <h2>Colored Boxes</h2>
-                            <p>
-                                Demonstrate how to use different color value types (<code>hex</code>, <code>rgb</code>,
-                                <code>hsl</code>) in CSS
-                            </p>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="project-tile">
-                    <div id="project-tile-text">
-                        <a href="https://github.com/karianjahi/css-colored-markers" target="_blank" id="color-markers"
-                            class="repo">
-                            <h2>Color Markers</h2>
-                            <p>
-                                Demonstrate how to combine colors to create illusion of depth using color markers
-                            </p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <section id="contact">
-                <h2>Contact Me</h2>
-                <address>
-                    <p>
-                        Joseph Njeri
-                    </p>
-                    <p>
-                        Elsa-Brändström-Str. 15a
-                    </p>
-                    <p>
-                        76228 Karlsruhe-Durlach, Deutschland
-                    </p>
-                    <p>
-                        Phone: <a href="tel:+491635155763" class="link">491635155763</a>
-                    </p>
-                    <p>
-                        Email: <a href="maito:nkarianjahi@gmail.com" class="link">nkarianjahi@gmail.com</a>
-                    </p>
-                </address>
-            </section>
-        </section>
-    </main>
+    </section>
 </body>
 
 </html>

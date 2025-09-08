@@ -1,371 +1,329 @@
-:root {
-    --background-common: linear-gradient(#2c2c31, #363670, #2c2c31);
-    /* --background-tile: linear-gradient(to right, #363671, #2e2e33, #1d1d27, #363671); */
-    --background-tile: linear-gradient(to right, #2e2e33, #363670,#2e2e33);
-    --border-tile-color: #1d1d27;
-    --background-same-color: linear-gradient(#1d1d27);
-    --font-family: monaco;
-}
-
 html {
     box-sizing: border-box;
-    scroll-padding-top: 50px; /* navbar should not overlap once you navigate to a section*/
+    scroll-padding-top: 50px;
+}
+
+:root {
+    --color: white;
+    --body-back-color: #2b1b03;
+    --home-back-color: #724c14;
+    --heading-background: linear-gradient(#1a1003, #724c14, #1a1003)
 }
 
 body {
-    background-color: #57579e;
-    font-family: var(--font-family);
-    color: white;
-}
-
-#landing-area {
-width: 100%;
-margin: auto;
-}
-
-#navbar {
+    background: linear-gradient(var(--body-back-color));
     display: flex;
-    border: 2px solid #2c2c31;
-    background: linear-gradient(45deg, #2c2c31, #363670);
-    border-radius: 5px;
+    flex-direction: column;
+    font-family: "arial";
+    font-style: normal;
+    color: var(--color);
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+header {
+    width: 100%;
+    /* margin: auto; */
+    display: flex;
+    gap: 50px;
+    background: linear-gradient(#291b05, #724c14, #291b05);
+    border: 2px solid #3a2609;
     position: fixed;
     top: 0;
+}
+
+header>h1 {
     width: 100%;
-    z-index: 1000;
- 
-}
-
-#navbar > ul {
-    position: relative;
-    left: 50%;
+    font-size: 2.0rem;
     display: flex;
-    gap: 40px;
-    list-style: none;
+    align-items: center;
+    margin-left: 2.5%;
 }
 
-
- .scroll-container {
-     display: flex;
-     align-items: center;
-     justify-content: center;
-      width: 300px;
-      height: 30px;
-      overflow: hidden;       /*Hide text outside the hole*/
-      position: absolute;
-      top: 2%;
-      left: 2%;
-      background: var(--border-tile-color);
-      /* background: var(--background-common); */
-      border-radius: 5px;
-
-    }
-
-    .scrolling-text {
-      position: absolute;
-      white-space: nowrap; /* Text must stay in one line*/
-      animation: scroll-hole 25s linear infinite;
-      color: white;
-      width: 600px;
-    }
-
-  @keyframes scroll-hole {
-      0% {
-        transform: translateX(100%) scale(1);  
-      }
-
-      100% {
-        transform: translateX(-100%) scale(1);  
-
-      }
-    }
-
-#navbar > ul > li > a {
-    color: white;
-    text-decoration: none;
-    font-weight: bolder;
-}
-
-#navbar > ul > li > a:hover {
-    color: antiquewhite;
-}
-
-#navbar > ul > li:hover {
-    transform: scale(1.5);
-    transition: 0.8s ease-in-out;
-}
-
-#welcome-section {
-    margin: auto;
-    margin-top: 10%;
-    height: 100vh;
+#home {
     width: 50%;
-}
-
-#welcome-section > .greetings {
-    background: var(--background-common);
-    position: relative;
+    /* min-height: 100vh; */
     margin: auto;
-    width: 100%;
-    top: 20%;
-    font-size: 150%; 
-    display: flex;   
-    flex-direction: column;
-    place-items: center;
-    /* font-family: arial; */
-    font-size: 250%;
-    text-align: center;
-    text-shadow: 2px 2px 3px black;
-    border-radius: 15px;
-}
-
-#second-greeting-message {
-    font-size: 40%;
-}
-
-#project-section {
-    height: 100vh;
-    margin-top: 4%;
-    /* border: 2px solid green; */
-}
-
-#project-section > .projects {
-    position: relative;
-    border-radius: 15px;
-    width: 85%;
-    margin: auto;
-    padding: 2%;
-    background: var(--background-common);
-    font-weight: bolder;
-    display: flex;
-    flex-direction: column;
-    place-items: center;
-    place-content: center;
-    overflow: hidden;
-    top: 6%;
-}
-
-#project-section > .projects > h2 {
-        text-transform: uppercase;
-        /* background: var(--background-same-color); */
-        border-radius: 10px;
-        width: 100%;
-        display: flex;
-        place-items: center;
-        place-content: center;
-        
-}
-
-
-#project-tiles {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 5px;
-    padding: 60px 20px;
-    width: 90%;
-    margin: 5%;
+    background: linear-gradient(var(--home-back-color));
+    margin-top: 2%;
+    border-radius: 10px;
     min-height: 100vh;
-
-    }
-
-.project-tile{
-    /* border: 2px solid black; */
-    width: 100%;
-    padding: 0%;
-    place-items: center;
-    text-align: center;
-    height: 200px;
+    padding-top: 60px;
 }
 
-.category {
-    width: 100%;
-}
-
-#project-tile-text{
-    background: var(--background-tile);
-    padding: 5%;
-    width: 80%;
-    height: 70%;
-    transition: 1s ease-in-out;
-    border-radius: 15px;
-    border: 2px solid var(--border-tile-color);
-    
-}
-
-#project-tile-text:hover{
-    transform: scale(1.2);
-}
-
-
-
-#project-tiles h2 {
-    position: relative;
-    left: -0%;
-    width: 95%;
-    margin: auto;
-    text-align: center;
-    font-size: 100%;
-    /* border: 2px solid rgb(53, 7, 2); */
-    background: var(--background-same-color);
-    border-radius: 5px;
-    height: 35%;
+#welcome-message {
     display: flex;
-    place-content: center;
+    flex-direction: column;
     place-items: center;
+    line-height: 35px;
+    padding: 2%;
 }
 
-#project-tiles p {
-    font-size: 85%;
-    
+#welcome-message>h2,
+#about>h2 {
+    background: var(--heading-background);
+    /* border: 2px solid red; */
+    font-size: 2.5em;
+    padding: 1.5%;
 }
-.repo {
+
+#welcome-message p {
+    text-align: justify;
+}
+
+#welcome-message p:first-of-type:before {
+    content: "👋";
+    position: relative;
+
+}
+
+#welcome-image {
+    width: 104%;
+    border: 2px solid #291b05;
+    border-radius: 10px;
+}
+
+nav {
+    width: 100%;
+    border-radius: 10px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 60px;
+    justify-content: flex-end;
+    padding: 2%;
+}
+
+nav>ul>li>a {
     color: white;
     text-decoration: none;
+    font-size: 1.4rem;
+    /* text-shadow: 0px 0px 2px #857b7b; */
 }
 
-@media screen and (max-width: 1000px) {
-    #navbar > ul {
-        flex-direction: column;
-        left: 30%;
-        top: 10%;
-        
-    }
-
-    .scroll-container {
-        top: 0%;
-    }
-
-    #project-tiles {
-        grid-template-columns: 1fr;
-    }
+nav>ul>li:hover {
+    transform: scale(1.5);
 }
 
+#about {
+    /* min-height: 100vh; */
+    width: 50%;
+    border: 2px solid #3a2609;
+    margin: auto;
+    min-height: 100vh;
+}
 
 .about-me {
-    background: linear-gradient(#2b2b3d);
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    place-items: center;
-    place-content: center;
-    margin: auto;
-    text-align: justify;
-    border-radius: 15px;
-}
-.about-me > h2, .life-history {
-    background: var(--background-common);
-    font-size: 150%;
-    font-weight: bolder;
+    background: #1a1003;
     padding: 2.5%;
     border-radius: 10px;
-    text-transform: uppercase;
-
+    text-align: justify;
+    line-height: 2;
+    /* background-color: #724c14; */
+    background-color: #725324;
 }
-.about-me p {
-    background: var(--background-common);
-    border-radius: 10px;
-    /* border: 2px solid #1d1d27; */
-    width: 70%;
+
+.about-me h2 {
+    fontw;
+}
+
+.life strong {
+    background-color: #291b05;
+    padding: 0.5%;
+    font-weight: bolder;
 }
 
 .about-me a {
-    color: white;
-    background-color: rgb(92, 56, 56);
     text-decoration: none;
-}
-.life-history {
-    width: 70%;
-    text-align: justify;
+    color: white;
+    background-color: #1a1003
 }
 
-.life-history > h2 {
+#projects {
+    min-height: 100vh;
+    margin-top: 5%;
+}
+
+#projects>h2,
+.about-me h2 {
+    font-size: 2.0rem;
+    border: 2px solid #724c14;
+    width: 30%;
     margin: auto;
     display: flex;
-    place-content: center;
-    background: var(--background-common);
-    width: 40%;
-    padding: 2.5%;
-    font-size: 150%;
+    justify-content: center;
+    text-transform: uppercase;
+    background: var(--heading-background);
+    margin-bottom: 2%;
+    padding: 1.5%;
 }
 
-.life-history > ul {
-    text-transform: none;
-    font-size: 75%;
-}
-
-
-
-.life-history li {
-    font-size: 80%;
-    margin-bottom: 15px;
-}
-
-.life-history span {
-    background-color: #1d1d27;
-}
-
-/* .about-me p:hover {
-    color: #1d1d27;
-    background-color: white;
-    transform: scale(1.2);
-} */
-
+#home,
+#about,
+#projects,
 #contact {
-    min-height: 100vh;
+    scroll-margin-top: 80px;
+}
+
+
+.gridding {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 'header header' 'backend frontend';
+}
+
+.gridding .category {
+    /* border: 2px solid #724c14; */
+
+}
+
+.gridding .category {
+    border: 2px solid #724c14;
+}
+
+.gridding .category h3 {
+    display: flex;
+    justify-content: center;
+    background: var(--heading-background);
     width: 50%;
+    padding: 1.8%;
+    margin: auto;
+    margin-bottom: 2%;
+    font-size: 2.1rem;
+}
+
+.repos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.specific-project {
+    /* border: 2px solid #724c14; */
+    padding: 1.5%;
     margin: auto;
     display: flex;
     flex-direction: column;
-    place-items: center;
+    width: 80%;
+    justify-content: center;
     text-align: center;
+    line-height: 2.5rem;
 }
 
-#contact h2, #contact address {
-    background: var(--background-tile);
-    background: var(--background-common);
-    padding: 5%;
-    border-radius: 5px;
+.specific-project h4 {
+    background: var(--heading-background);
+    padding: 1.5%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    height: 100px;
+    font-size: 1.5rem;
 }
 
-#contact h2 {
-    text-transform: uppercase;
-    border-radius: 10px;
-}
-
-#contact address p:nth-child(1)::before {
-    content: "👤";
-    position: relative;
-}
-
-#contact address p:nth-child(2)::before {
-    content: "🏠";
-    position: relative;
-}
-
-#contact address p:nth-child(3)::before {
-    content: "📍";
-    position: relative;
-}
-
-#contact address p:nth-child(4)::before {
-    content: "📞";
-    position: relative;
-    background-color: white;
-}
-
-#contact address p:nth-child(5)::before {
-    content: "📧";
-    position: relative;
-}
-
-#contact a {
+.repo-link {
     color: white;
     text-decoration: none;
 }
 
+.repo-link:hover {
+    transform: scale(1.3);
+    transition: 0.8s ease-in-out;
+}
 
-#contact a:hover {
-    color: #2e2e33;
-    background-color: white;
-    text-decoration: none;
-    transform: scale(1.5);
+@media screen and (max-width: 768px) {
+
+
+    nav>ul {
+        flex-direction: column;
+        place-items: center;
+    }
+
+    body {
+        margin: 0;
+        padding-top: 60px;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        position: sticky;
+        top: 0;
+        width: 450px;
+        place-items: center;
+        place-content: center;
+        z-index: 1000;
+        margin: auto;
+        border: 2px solid #724c14;
+    }
+
+    header>h1 {
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    #welcome-message>h2,
+    #about h2 {
+        background: var(--heading-background);
+        /* border: 2px solid red; */
+        font-size: 1.5em;
+        display: flex;
+        place-items: center;
+        place-content: center;
+        margin: auto;
+        width: 350px;
+    }
+
+    #welcome-message p {
+        text-align: justify;
+    }
+
+    #home {
+        width: 450px;
+        position: relative;
+        top: 30%;
+    }
+    
+    #about {
+        width: 450px;
+        margin: auto;
+    }
+    #home, #about, #projects, #contact {
+        scroll-margin-top: 1000px;
+    }
+
+    #projects {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #projects h2 {
+        width: 500px;
+    }
+
+    .gridding {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .gridding .category {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .repos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #projects h3 {
+        width: 650px;
+    }
+
 }
