@@ -18,7 +18,7 @@ body {
     font-style: normal;
     color: var(--color);
     margin: 0;
-    font-size: 1.3rem;
+    font-size: 1.7rem;
 }
 
 header {
@@ -99,12 +99,13 @@ nav ul {
 nav>ul>li>a {
     color: white;
     text-decoration: none;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     /* text-shadow: 0px 0px 2px #857b7b; */
 }
 
 nav>ul>li:hover {
     transform: scale(1.5);
+    transition: 0.8s ease-in-out;
 }
 
 #about {
@@ -235,7 +236,7 @@ nav>ul>li:hover {
     transition: 0.8s ease-in-out;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
 
 
     nav>ul {
@@ -342,7 +343,7 @@ nav>ul>li:hover {
 #contact h2 {
     background: var(--heading-background);
     padding: 1.5%;
-    font-size: 280%;
+    font-size: 200%;
     text-transform: uppercase;
 }
 
