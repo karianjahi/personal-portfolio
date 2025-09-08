@@ -127,7 +127,7 @@ nav>ul>li:hover {
 }
 
 .about-me h2 {
-    fontw;
+    
 }
 
 .life strong {
@@ -236,99 +236,6 @@ nav>ul>li:hover {
     transition: 0.8s ease-in-out;
 }
 
-@media screen and (max-width: 1000px) {
-
-
-    nav>ul {
-        flex-direction: column;
-        place-items: center;
-    }
-
-    body {
-        margin: 0;
-        padding-top: 60px;
-    }
-
-    header {
-        display: flex;
-        flex-direction: column;
-        position: sticky;
-        top: 0;
-        width: 450px;
-        place-items: center;
-        place-content: center;
-        z-index: 1000;
-        margin: auto;
-        border: 2px solid #724c14;
-    }
-
-    header>h1 {
-        margin: auto;
-        display: flex;
-        justify-content: center;
-    }
-
-    #welcome-message>h2,
-    #about h2 {
-        background: var(--heading-background);
-        /* border: 2px solid red; */
-        font-size: 1.5em;
-        display: flex;
-        place-items: center;
-        place-content: center;
-        margin: auto;
-        width: 350px;
-    }
-
-    #welcome-message p {
-        text-align: justify;
-    }
-
-    #home {
-        width: 450px;
-        position: relative;
-        top: 30%;
-    }
-    
-    #about {
-        width: 450px;
-        margin: auto;
-    }
-    #home, #about, #projects, #contact {
-        scroll-margin-top: 1000px;
-    }
-
-    #projects {
-        display: flex;
-        flex-direction: column;
-
-    }
-
-    #projects h2 {
-        width: 500px;
-    }
-
-    .gridding {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .gridding .category {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .repos {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #projects h3 {
-        width: 650px;
-    }
-
-}
-
 #contact {
     /* border: 2px solid #724c14; */
     display: flex;
@@ -340,6 +247,13 @@ nav>ul>li:hover {
     text-align: center;
 }
 
+#contact h2 {
+    font-size: 10px;
+}
+
+#contact address {
+    font-size: 5px;
+}
 #contact h2 {
     background: var(--heading-background);
     padding: 1.5%;
@@ -381,3 +295,104 @@ nav>ul>li:hover {
     color: white;
     text-decoration: none;
 }
+
+@media screen and (max-width: 1000px) {
+
+    #contact h2 {
+        font-size: 120%;
+    }
+    
+    #contact address {
+        font-size: 120%;
+    }
+
+    nav>ul {
+        flex-direction: column;
+        place-items: center;
+    }
+    
+    body {
+        margin: 0;
+        padding-top: 60px;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        position: sticky;
+        top: 0;
+        width: 450px;
+        place-items: center;
+        place-content: center;
+        z-index: 1000;
+        margin: auto;
+        border: 2px solid #724c14;
+    }
+
+    header>h1 {
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    #welcome-message>h2,
+    #about h2 {
+        background: var(--heading-background);
+        /* border: 2px solid red; */
+        font-size: 1.5em;
+        display: flex;
+        place-items: center;
+        place-content: center;
+        margin: auto;
+        width: 350px;
+    }
+    
+    #welcome-message p {
+        text-align: justify;
+    }
+
+    #home {
+        width: 450px;
+        position: relative;
+        top: 30%;
+    }
+    
+    #about {
+        width: 450px;
+        margin: auto;
+    }
+    #home, #about, #projects, #contact {
+        scroll-margin-top: 1000px;
+    }
+    
+    #projects {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    #projects h2 {
+        width: 500px;
+    }
+    
+    .gridding {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .gridding .category {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .repos {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #projects h3 {
+        width: 650px;
+    }
+    
+}
+
