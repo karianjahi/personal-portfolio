@@ -26,7 +26,7 @@ header {
     /* margin: auto; */
     display: flex;
     gap: 50px;
-    background: linear-gradient(#291b05, #724c14, #291b05);
+    background: var(--heading-background);
     border: 2px solid #3a2609;
     position: fixed;
     top: 0;
@@ -326,4 +326,57 @@ nav>ul>li:hover {
         width: 650px;
     }
 
+}
+
+#contact {
+    /* border: 2px solid #724c14; */
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    width: 50%;
+    margin: auto;
+    height: 100vh;
+    text-align: center;
+}
+
+#contact h2 {
+    background: var(--heading-background);
+    padding: 1.5%;
+    font-size: 280%;
+    text-transform: uppercase;
+}
+
+#contact address {
+    font-size: 250%;
+}
+
+#contact address p:nth-child(1)::before {
+    content: "👤";
+    position: relative;
+}
+
+#contact address p:nth-child(2)::before {
+    content: "🏠";
+    position: relative;
+}
+
+#contact address p:nth-child(3)::before {
+    content: "📍";
+    position: relative;
+}
+
+#contact address p:nth-child(4)::before {
+    content: "📞";
+    position: relative;
+    background-color: white;
+}
+
+#contact address p:nth-child(5)::before {
+    content: "📧";
+    position: relative;
+}
+
+#contact a {
+    color: white;
+    text-decoration: none;
 }
