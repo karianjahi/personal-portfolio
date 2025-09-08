@@ -371,7 +371,8 @@ nav>ul>li:hover {
         /* border: 2px solid #1a1003; */
         font-size: 80%;
         justify-content: flex-start;
-     
+        border: none;
+        
     }
 
     #welcome-message>h2,
@@ -384,12 +385,13 @@ nav>ul>li:hover {
         place-content: center;
         margin: auto;
         width: 350px;
+        border: none;
     }
     
     #welcome-message p {
         text-align: justify;
     }
-
+    
     #home {
         width: 450px;
         position: relative;
@@ -412,6 +414,7 @@ nav>ul>li:hover {
     
     #projects h2 {
         width: 500px;
+        border: none;
     }
     
     .gridding {
@@ -422,16 +425,20 @@ nav>ul>li:hover {
     .gridding .category {
         display: flex;
         flex-direction: column;
+        border: none;
     }
     
     .repos {
         display: flex;
         flex-direction: column;
+        border: none;
     }
     
     #projects h3 {
         width: 650px;
+        border: none;
     }
     
+   
 }
 
