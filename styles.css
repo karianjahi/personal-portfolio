@@ -18,7 +18,7 @@ body {
     font-style: normal;
     color: var(--color);
     margin: auto;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
 }
 
 header {
@@ -441,4 +441,5 @@ nav>ul>li:hover {
     
    
 }
+
 
