@@ -214,7 +214,7 @@ nav>ul>li:hover {
     line-height: 2.5rem;
 }
 
-.specific-project h4 {
+.specific-project h4{
     background: var(--heading-background);
     padding: 1.5%;
     width: 60%;
