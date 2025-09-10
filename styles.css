@@ -310,6 +310,7 @@ nav>ul>li:hover {
     border: 2px solid #725324;
     margin: auto;
     width: 150px;
+    margin-top: 3%;
 }
 
 @media screen and (max-width: 1000px) {
