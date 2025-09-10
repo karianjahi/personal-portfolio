@@ -306,6 +306,12 @@ nav>ul>li:hover {
     text-decoration: none;
 }
 
+#personal-portfolio-photo {
+    border: 2px solid #725324;
+    margin: auto;
+    width: 150px;
+}
+
 @media screen and (max-width: 1000px) {
     body {
         margin: 0;
