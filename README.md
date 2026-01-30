@@ -1,4 +1,7 @@
 # Personal Portfolio - Dr.rer.nat Joseph Njeri
+ ---
+View the project here: **[live demo](https://karianjahi.github.io/personal-portfolio/)** 🚀
+---
 
 ![Portfolio Preview](images/joseph-njeri-photo.jpeg)
 
