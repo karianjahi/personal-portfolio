@@ -11,15 +11,33 @@
 
 <body>
     <header>
-        <!-- <h1>Dr.rer.nat Joseph Njeri</h1> -->
         <img src="images/joseph-njeri-photo.jpeg" alt="profile-photo">
+
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="static/updated-cv.pdf" download>Download CV</a></li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Download CV ▾</a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="static/cv-english.pdf" class="cv-link" download>
+                                English Version
+                            </a>
+                        </li>
+                        <li>
+                            <a href="static/cv-german.pdf" class="cv-link" download>
+                                German Version
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            </li>
+
             </ul>
         </nav>
     </header>
@@ -242,17 +260,18 @@
                             </p>
                         </div>
 
-                    </a> 
-                    
+                    </a>
+
                     <a href="https://github.com/karianjahi/regex-sandbox" target="_blank" id="regex-sandbox-link"
                         class="repo-link">
                         <div id="regex-sandbox-container" class="specific-project">
                             <h4>Regex Sandbox</h4>
                             <p>
-                                An interactive regex testing playground with flag support (i, g), unique match filtering, and highlighted results.
+                                An interactive regex testing playground with flag support (i, g), unique match
+                                filtering, and highlighted results.
                             </p>
                         </div>
-                    </a> 
+                    </a>
 
                     <a href="https://github.com/karianjahi/theme-switcher" target="_blank" id="theme-switcher-link"
                         class="repo-link">
