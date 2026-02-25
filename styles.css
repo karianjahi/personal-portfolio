@@ -500,3 +500,17 @@ nav>ul>li:hover {
     color: white;
 
 }
+
+
+#markdown-to-html-converter {
+    color: black;
+    background-color: white;
+    text-decoration: none;
+
+}
+
+#markdown-to-html-converter:hover {
+    background: linear-gradient(#e7e5e1, #725324, #776d5f);
+    color: white;
+    transform: scale(3);
+}
