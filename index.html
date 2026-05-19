@@ -1,745 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link href="styles.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Joseph Njeri | Portfolio</title>
+
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 </head>
 
 <body>
-    <header>
-        <img src="images/joseph-njeri-photo.jpeg" alt="profile-photo">
+  <header class="site-header">
+    <a href="#home" class="brand">
+      <img src="images/joseph-njeri-photo.jpeg" alt="Joseph Njeri profile photo" />
+      <span>Joseph Njeri</span>
+    </a>
 
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+    <nav class="main-nav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
 
-                <li class="dropdown">
-                    <a href="#" class="dropbtn">Download CV ▾</a>
-                    <ul class="dropdown-menu">
-                        <li>
-                            <a href="static/cv-english.pdf" class="cv-link" download>
-                                English Version
-                            </a>
-                        </li>
-                        <li>
-                            <a href="static/cv-german.pdf" class="cv-link" download>
-                                German Version
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-            </li>
-
-            </ul>
-        </nav>
-    </header>
-    <section id="home">
-        <div id="welcome-message">
-            <h2>Welcome Message</h2>
-            <p>
-                Hi, I’m Joseph Njeri — a passionate Data Scientist and Full-Stack Developer blending advanced analytics
-                with modern web development. With expertise in machine learning, Django, Flask, JavaScript, PostgreSQL
-                among other backend and frontend tools, I
-                build intelligent applications that transform data into actionable insights. I believe the future of
-                technology lies in the fusion of AI and full-stack development — and the sooner you get on board, the
-                better. Explore my projects to see how I turn ideas into impactful solutions, from investment apps to
-                interactive web designs.
-            </p>
-            <p>
-                Let’s create something extraordinary together
-            </p>
-            <img id=welcome-image
-                src="https://media.istockphoto.com/id/2210858896/photo/software-engineer-and-software-development-concepts-programming-for-various-devices-computer.jpg?s=1024x1024&w=is&k=20&c=uEUGnKpvgPOZhSdzF7NkcEgukPg60axR2RibI4m8pNs="
-                alt="pixaby-fullstack">
+      <div class="dropdown">
+        <button class="dropbtn">Download CV ▾</button>
+        <div class="dropdown-menu">
+          <a href="static/cv-english.pdf" download>English Version</a>
+          <a href="static/cv-german.pdf" download>German Version</a>
         </div>
-    </section>
-    <section id="about">
-        <div class="about-me">
-            <h2>About Me</h2>
-            <p>
-                I am Joseph Njeri and I am a full stack software developer and data scientist. My background combines
-                machine learning, data engineering, and modern web development, allowing me to create complete
-                end-to-end solutions that bring together powerful back-end intelligence and responsive, user-friendly
-                front-end design.
-            </p>
-            <p>
-                However, my profession hasn't always been in Tech. My academic background is in atmospheric science. I
-                hold
-                a Doctor of Natural Sciences (Dr. rer. nat) in Atmospheric Physics and Dynamics from the Karlsruhe
-                Institute
-                of Technology (2015–2019), where I researched the diagnosis and simulation of extreme precipitation
-                events
-                over Kenya. Before that, I earned a Master of Science in Meteorology from the University of Nairobi
-                (2010–2012), focusing on assessing the predictability of rainfall using tropical convection indices, and
-                a
-                Bachelor of Science in Meteorology from the same institution (2005–2009).
-            </p>
-            <p>
-                I have professional experience in predictive modeling, recommender systems, image recognition, and
-                financial modeling using Python, Keras, and scikit-learn. On the backend, I work with Django REST
-                Framework and Flask to build APIs and data-driven applications, while also drawing on a strong
-                foundation in PostgreSQL and MongoDB. On the frontend, I am self-taught in HTML, CSS, JavaScript, and
-                React, continuously building responsive, interactive projects that showcase how design and functionality
-                come together. Alongside this, I have also worked as a trainer and curriculum developer at neuefische
-                GmbH,
-                mentoring students and preparing them for industry roles.
-                <!-- Some of my selected GitHub projects and ongoing work can be found <a id="my-projects"
-                    href="#project-section">here</a> -->
-            </p>
-            <p>
-                My core expertise lies in machine learning and AI, where I apply advanced methods using Python, Keras,
-                and scikit-learn to build predictive models, recommender systems, and image recognition solutions. I
-                have also developed robust data engineering workflows and designed APIs using Django REST Framework and
-                Flask, with a strong foundation in PostgreSQL and MongoDB.
-            </p>
-            <p>
-                I live in Karlsruhe, Germany, and I am always open to collaborations, research, or projects at the
-                intersection of full stack software development and data science.
-            </p>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero section">
+      <div class="hero-text">
+        <p class="eyebrow">Data Science • Full-Stack Development • AI</p>
+        <h1>Building intelligent web applications that turn data into decisions.</h1>
+
+        <p>
+          Hi, I’m Joseph Njeri — a Data Scientist and Full-Stack Developer combining
+          machine learning, Django, Flask, JavaScript, PostgreSQL, and modern UI design
+          to build useful, data-driven applications.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn primary">View Projects</a>
+          <a href="#contact" class="btn secondary">Contact Me</a>
         </div>
-        <div class="about-me life">
-            <!-- <h2>Life History</h2>
-            <ul>
-                <li><strong>1985</strong>: Born at Murang’a Hospital, Murang’a Town, Murang’a County, Kenya.</li>
-                <li><strong>1988 – 1989</strong>: Attended Kiumu Nursery School, Kahuro, Kenya.</li>
-                <li><strong>1990 – 1991</strong>: Transferred to Gitiri Nursery School, Kahuro, where I completed
-                    pre-primary education.</li>
-                <li><strong>1992 – 1999</strong>: Attended Gitiri Primary School and successfully earned the Kenya
-                    Certificate of Primary Education (KCPE).</li>
-                <li><strong>2000 – 2003</strong>: Studied at Mugoiri Boys Secondary School and earned the Kenya
-                    Certificate of Secondary Education (KCSE).</li>
-                <li><strong>2003 – 2005</strong>: Took a gap period while waiting to join university, during which I
-                    volunteered as a teacher at Mugoiri Boys Secondary School.</li>
-                <li><strong>2005 – 2009</strong>: Enrolled at the University of Nairobi, graduating with a
-                    <strong>Bachelor of Science in Meteorology (First Class Honours)</strong>.
-                </li>
-                <li><strong>2009 – 2010</strong>: Joined IGAD Climate Predictions and Applications Center (ICPAC),
-                    Nairobi, as a research mentee.</li>
-                <li><strong>2010</strong>: Awarded a DAAD Scholarship to pursue a two-year <strong>Master of Science in
-                        Meteorology</strong> at the University of Nairobi while continuing mentorship at ICPAC.</li>
-                <li><strong>2010-2012</strong>: Msc (Meteorology) Student at the University of Nairobi </li>
-                <li><strong>2012 Feb – May</strong>: Participated in a DAAD Exchange Programme at the Free University of
-                    Berlin, Germany, to complete MSc research work.</li>
-                <li><strong>Sep 2012</strong>: Graduated with a <strong>Master of Science in Meteorology</strong> from
-                    the University of Nairobi.</li>
-                <li><strong>Sep – Dec 2012</strong>: Continued mentorship at ICPAC.</li>
-                <li><strong>Jan 2013 – Aug 2023</strong>: Worked part-time as a lecturer at the School of Earth
-                    Sciences, South Eastern Kenya University (SEKU), Kitui.</li>
-                <li><strong>Sep 2013</strong>: Formally appointed as a full-time Tutorial Fellow at SEKU.</li>
-                <li><strong>Oct 2014</strong>:
-                    <ul>
-                        <li>Awarded a second DAAD Scholarship to pursue doctoral studies at the <strong>Karlsruhe
-                                Institute of Technology (KIT), Germany</strong>, while still teaching at SEKU.</li>
-                        <li>Secured a permanent, pensionable appointment as <strong>Assistant Lecturer</strong> at the
-                            University of Eldoret, School of Environmental Sciences.</li>
-                    </ul>
-                </li>
-                <li><strong>Apr – Jun 2015</strong>:
-                    <ul>
-                        <li>Granted a paid study leave by the University of Eldoret to pursue doctoral studies in
-                            Germany.</li>
-                        <li>Completed a German language course at Goethe Institute, Nairobi, achieving <strong>A1
-                                certification</strong>.</li>
-                        <li>Departed Nairobi, Kenya, for Leipzig, Germany.</li>
-                    </ul>
-                </li>
-                <li><strong>Jul – Sep 2015</strong>: Continued German language studies at interDaF, Universität Leipzig,
-                    earning a <strong>B1 German Language Certificate</strong>.</li>
-                <li><strong>Oct 2015</strong>:
-                    <ul>
-                        <li>Relocated to Karlsruhe to enroll for a <strong>Doctor of Natural Sciences
-                                (Dr.rer.nat)</strong> at KIT’s Institute of Meteorology and Climate Research.</li>
-                        <li>Appointed by Prof. Andreas Fink as <strong>Assistant Data Manager</strong> at the Karlsruhe
-                            African Surface Station Database (KASSD).</li>
-                    </ul>
-                </li>
-                <li><strong>May 2019</strong>:
-                    <ul>
-                        <li>Graduated with a <strong>Doctor of Natural Sciences (Dr.rer.nat)</strong> from KIT.</li>
-                        <li>Declined return to the University of Eldoret and opted to remain in Germany for work
-                            opportunities.</li>
-                    </ul>
-                </li>
-                <li><strong>May – Jul 2019</strong>: Continued as Assistant Data Manager at KASSD.</li>
-                <li><strong>Jul 2019</strong>: Secured first Data Scientist role at <strong>Engineering Data
-                        Intelligence (EDI GmbH)</strong>, Karlsruhe.</li>
-                <li><strong>Jun 2021</strong>: Left EDI GmbH and, through the Agentur für Arbeit, enrolled in a 3-month
-                    Data Science bootcamp at <strong>Spiced Academy, Berlin</strong> (online).</li>
-                <li><strong>Sep 2021</strong>: Completed the bootcamp and was offered a <strong>Junior Data Science
-                        Teaching Role</strong> at Spiced Academy, Stuttgart branch.</li>
-                <li><strong>Jul 2022</strong>: Stuttgart branch closed, but I continued in the same teaching role fully
-                    online.</li>
-                <li><strong>Sep 2023</strong>: Promoted to <strong>Mid-Level Data Science Coach</strong>.</li>
-                <li><strong>Jul 2025</strong>: End of contract with Spiced/Neuefische GmbH</li>
-                <li><strong>Aug 2025 – present</strong>: Focused on <strong>self-learning in Full-Stack
-                        Development</strong>.</li>
-            </ul>
+      </div>
 
-
-        </div> -->
+      <div class="hero-image">
+        <img
+          src="https://media.istockphoto.com/id/2210858896/photo/software-engineer-and-software-development-concepts-programming-for-various-devices-computer.jpg?s=1024x1024&w=is&k=20&c=uEUGnKpvgPOZhSdzF7NkcEgukPg60axR2RibI4m8pNs="
+          alt="Software development workspace"
+        />
+      </div>
     </section>
 
-    <section id="projects">
-        <h2>Selected gitHub Projects</h2>
-        <div class="gridding">
-
-            <div class="category">
-                <!-- <h3>Frontend - HTML/CSS/JavaScript/React</h3> -->
-                <h3>Frontend - HTML/CSS/JavaScript</h3>
-                <div class="repos">
-
-                    <!-- <a href="https://github.com/karianjahi/music-album-collection" target="_blank" id="music-album-collection-link"
-                        class="repo-link">
-                        <div id="music-album-collection-container" class="specific-project">
-                            <h4>Music Album Collection</h4>
-                            <p>
-                                Function-based project to manage, update, and maintain a music album collection stored as nested objects.
-                            </p>
-                        </div>
-                    </a>
-                     <a href="https://github.com/karianjahi/quiz-game" target="_blank" id="quiz-game-link"
-                        class="repo-link">
-                        <div id="quiz-game-container" class="specific-project">
-                            <h4>Quiz Game</h4>
-                            <p>
-                               A console quiz game where the computer attempts to guess answers from JSON objects with categories, questions, multiple choices, and correct answers.
-                            </p>
-                        </div>
-                    </a>
-
-                    <a href="https://github.com/karianjahi/sentence-maker" target="_blank" id="sentence-maker-link"
-                        class="repo-link">
-                        <div id="sentence-maker-container" class="specific-project">
-                            <h4>Sentence Maker</h4>
-                            <p>
-                                Sentence Maker - Turn Words into fun stories with JavaScript
-                            </p>
-                        </div>
-                    </a>
-
-                    <a href="https://github.com/karianjahi/javascript-trivia-bot" target="_blank"
-                        id="javascript-trivia-bot-link" class="repo-link">
-                        <div id="personal-portfolio-container" class="specific-project">
-                            <h4>Trivia Bot</h4>
-                            <p>
-                                variables, string concatenation, and console output: a fun way to learn JavaScript
-                                basics!
-                            </p>
-                        </div>
-                    </a> -->
-
-                    <a href="https://github.com/karianjahi/personal-portfolio" target="_blank"
-                        id="personal-portfolio-link" class="repo-link">
-                        <div id="personal-portfolio-container" class="specific-project">
-                            <h4>Personal Portfolio</h4>
-                            <img src="images/joseph-njeri-photo.jpeg" alt="portfolio passport photo"
-                                id="personal-portfolio-photo">
-                            <p>
-                                Personal portfolio GitHub repo that creates this page.
-                            </p>
-                        </div>
-                    </a>
-
-
-                    </a>
-                    <a href="https://github.com/karianjahi/calorie-counter" target="_blank"
-                        id="calorie-counter-link" class="repo-link">
-                        <div id="calorie-counter-container" class="specific-project">
-                            <h4>Calorie Counter</h4>
-                            <p>
-                                A browser-based calorie tracker that lets users add meal and exercise entries, set a daily calorie budget, and calculate remaining calories as a deficit or surplus. Includes dynamic form fields, input sanitization, and clear/reset functionality.
-                            </p>
-                        </div>
-                    </a>
-
-                               <a href="https://github.com/karianjahi/arsenal-team-cards" target="_blank"
-                        id="arsenal-team-cards-link" class="repo-link">
-                        <div id="arsenal-team-cards-container" class="specific-project">
-                            <h4>Arsenal Team Cards</h4>
-                            <p>
-                                An interactive football team cards app that dynamically renders year 2026 Arsenal FC
-                                players from JavaScript objects
-                            </p>
-                        </div>
-                    </a>
-
-                    
-                    <a href="https://github.com/karianjahi/simple-calculator" target="_blank"
-                        id="simple-calculator-link" class="repo-link">
-                        <div id="simple-calculator-container" class="specific-project">
-                            <h4>Simple Calculator</h4>
-                            <p>
-                                A responsive browser-based calculator built with HTML, CSS Grid, and vanilla JavaScript,
-                                supporting arithmetic operations, square, square root, decimals, and dynamic expression
-                                parsing with Math.js.
-                            </p>
-                        </div>
-                    </a>
-
-                    <a href="https://github.com/karianjahi/markdown-to-html-converter" target="_blank"
-                        id="markdown-to-html-converter-link" class="repo-link">
-                        <div id="markdown-to-html-container" class="specific-project">
-                            <h4>Markdown to HTML converter</h4>
-                            <p>
-                                A lightweight browser-based tool that converts a minimal subset of Markdown into HTML
-                                using handcrafted RegEx rules, with live preview rendering.
-                            </p>
-                            
-                        </div>
-                    </a>
-
-
-
-                    <a href="https://github.com/karianjahi/regex-sandbox" target="_blank" id="regex-sandbox-link"
-                        class="repo-link">
-                        <div id="regex-sandbox-container" class="specific-project">
-                            <h4>Regex Sandbox</h4>
-                            <p>
-                                An interactive regex testing playground with flag support (i, g), unique match
-                                filtering, and highlighted results.
-                            </p>
-                        </div>
-                    </a>
-
-                    <a href="https://github.com/karianjahi/theme-switcher" target="_blank" id="theme-switcher-link"
-                        class="repo-link">
-                        <div id="theme-switcher-container" class="specific-project">
-                            <h4>Theme Switcher</h4>
-                            <p>
-                                An accessible theme switcher built with vanilla JavaScript, featuring an ARIA-compliant
-                                menu, body-level theme classes, CSS custom properties, and polite live-region
-                                announcements that fade out smoothly.
-                            </p>
-                        </div>
-                    </a>
-
-
-                    <a href="https://github.com/karianjahi/palindrome-checker" target="_blank"
-                        id="palindrome-checker-link" class="repo-link">
-                        <div id="palindrome-checker-container" class="specific-project">
-                            <h4>Palindrome Checker</h4>
-                            <p>
-                                A palindrome checker that uses regex to filter non-alphanumeric characters, normalizes
-                                case, and compares the reversed string. Supports click + Enter key input. </p>
-                        </div>
-                    </a>
-
-
-                    <a href="https://github.com/karianjahi/planets-tablist" target="_blank" id="planets-tablist-link"
-                        class="repo-link">
-                        <div id="planets-tablist-container" class="specific-project">
-                            <h4>Planets Tablist</h4>
-                            <p>
-                                An accessible tablist UI demonstrating ARIA roles (tablist, tab, tabpanel), state
-                                management via aria-selected, and conditional panel visibility using the hidden
-                                attribute, built with vanilla JavaScript.
-                            </p>
-                        </div>
-                    </a>
-
-                    <a href="https://github.com/karianjahi/css-flex-box-playing-cards" target="_blank"
-                        id="playing-cards-link" class="repo-link">
-                        <div id="playing-cards-container" class="specific-project">
-                            <h4>Playing Cards</h4>
-                            <p>
-                                Demonstrating how flexbox can help in building a deck of cards
-                            </p>
-                        </div>
-                    </a>
-
-
-                    <a href="https://github.com/karianjahi/flappy-penguin" target="_blank" id="flappy-penguin"
-                        class="repo-link">
-                        <div id="flappy-penguin" class="specific-project">
-                            <h4>Flappy Penguin</h4>
-                            <p>
-                                A visually engaging animation of a penguin flapping its left wing created with HTML and
-                                CSS
-                            </p>
-                        </div>
-                    </a>
-
-                    <a href="https://karianjahi.github.io/business-card-design/" target="_blank" id="business-card-link"
-                        class="repo-link">
-                        <div id="business-card-container" class="specific-project">
-                            <h4>Business Card</h4>
-                            <p>
-                                Designing a business card showcasing basic CSS techniques to create a visually appealing
-                                card
-                            </p>
-                        </div>
-                    </a>
-                    <a href="https://github.com/karianjahi/trombones-sale-css-grid" target="_blank" id="trombone-sales"
-                        class="repo-link">
-                        <div id="sales-page" class="specific-project">
-                            <h4>Trombone Sales Landing Page</h4>
-                            <p>
-                                Demonstration of how CSS flexbox and grid can combine to create a responsive sales page
-                            </p>
-                        </div>
-                    </a>
-
-                    <a href="https://github.com/karianjahi/django-drf-responsive-technical-doc-css" target="_blank"
-                        id="documentation" class="repo-link">
-                        <div id="documentation" class="specific-project">
-                            <h4>Technical Documentation</h4>
-                            <p>
-                                How to create a technical documentation page that responds to different screen sizes.
-                                Case study: Django Rest Framework
-                            </p>
-                        </div>
-                    </a>
-                    <a href="https://github.com/karianjahi/moon-orbit-animation" target="_blank" id="moon"
-                        class="repo-link">
-                        <div id="moon-orbit" class="specific-project">
-                            <h4>Moon Orbit</h4>
-                            <p>
-                                A visually engaging animation of the orbit of the moon around the earth using pure HTML
-                                and CSS
-                            </p>
-                        </div>
-                    </a>
-
-
-                    <a href="https://github.com/karianjahi/book-inventory-app" target="_blank" id="book-inventory"
-                        class="repo-link">
-                        <div id="book-inventory-container" class="specific-project">
-                            <h4>Book Inventory</h4>
-                            <p>
-                                Creating a book inventory table: Demonstrates how to create a responsive web design
-                                using semantic HTML and attribute selectors
-                            </p>
-                        </div>
-                    </a>
-
-                    <a href="https://github.com/karianjahi/css-positioning-house-painting" target="_blank"
-                        id="house-painting-link" class="repo-link">
-                        <div id="house-painting-container" class="specific-project">
-                            <h4>House Painting</h4>
-                            <p>
-                                Demonstration of positioning of elements using CSS by way of painting a house
-                            </p>
-                        </div>
-                    </a>
-
-
-                    <a href="https://github.com/karianjahi/css-accessibility-tribute-page" target="_blank"
-                        id="tribute-page-link" class="repo-link">
-                        <div id="tribute-page-container" class="specific-project">
-                            <h4>Tribute Page</h4>
-                            <p>
-                                How attribute selectors come in handy in HTML/CSS. Building a tribute page using
-                                attribute
-                                selectors
-                            </p>
-                        </div>
-                    </a>
-
-
-                    <a href="https://github.com/karianjahi/css-newspaper-article" target="_blank" id="typography-link"
-                        class="repo-link">
-                        <div id="typography-container" class="specific-project">
-                            <h4>Newspaper Article</h4>
-                            <p>
-                                How Typography in CSS can help in creating a newspaper article.
-                            </p>
-                        </div>
-                    </a>
-
-
-
-
-                    <a href="https://github.com/karianjahi/confidential-email-page" target="_blank"
-                        id="confidential-email-link" class="repo-link">
-                        <div id="confidential-email-container" class="specific-project">
-                            <h4>Confidential Email</h4>
-                            <p>
-                                Demonstrating the Box Model by creating a confidential email page
-                            </p>
-                        </div>
-                    </a>
-
-
-                    <a href="https://github.com/karianjahi/contact_form" target="_blank" id="contact-link"
-                        class="repo-link">
-                        <div id="contact-container" class="specific-project">
-                            <h4>Contact Form</h4>
-                            <p>
-                                A simplified way of creating a contact form for a company to gather feedback about
-                                issues
-                            </p>
-                        </div>
-                    </a>
-
-
-                    <a href="https://github.com/karianjahi/css-colored-boxes" target="_blank" id="colored-boxes-link"
-                        class="repo-link">
-                        <div id="colored-boxes-container" class="specific-project">
-                            <h4>Colored Boxes</h4>
-                            <p>
-                                Colors in CSS. Demonstration of how to use different color value types
-                                (<code>hex</code>, <code>rgb</code>,
-                                <code>hsl</code>)
-                            </p>
-                        </div>
-                    </a>
-
-
-
-                    <a href="https://github.com/karianjahi/job-application-form" target="_blank"
-                        id="job-application-form-link" class="repo-link">
-                        <div id="job-application-container" class="specific-project">
-                            <h4>Job Application Form</h4>
-                            <p>
-                                Styling forms in CSS. A simple user-friendly job application form styled using CSS
-                            </p>
-                        </div>
-                    </a>
-
-
-                    <a href="https://github.com/karianjahi/event_flyer" target="_blank" id="event-flyer-link"
-                        class="repo-link">
-                        <div id="event-flyer-container" class="specific-project">
-                            <h4>Event Flyer</h4>
-                            <p>
-                                Absolute and Relative Units in CSS. A demonstration of their application by way of
-                                creating an event flyer
-                            </p>
-                        </div>
-                    </a>
-
-
-                </div>
-            </div>
-            <div class="category">
-                <h3>Data Science & Software Development</h3>
-                <a href="https://github.com/karianjahi/ifb2024" target="_blank" id="ifb" class="repo-link">
-
-                    <div class="repos">
-                        <div id="ifb" class="specific-project">
-                            <h4>IFB 2024 Bond</h4>
-                            <p>Calculate returns, amortization schedules, and investment insights</p>
-                        </div>
-                </a>
-
-                <a href="https://github.com/karianjahi/compounding_investment" target="_blank" id="compounding"
-                    class="repo-link">
-                    <div id="investment" class="specific-project">
-                        <h4>Investment Returns App</h4>
-                        <p>Django REST Framework-powered API for calculating investment growth through compound interest
-                        </p>
-                    </div>
-                </a>
-
-                <a href="https://github.com/karianjahi/tic-tac-toe-game" target="_blank" id="tic-tac-toe"
-                    class="repo-link">
-                    <div id="game-logic" class="specific-project">
-                        <h4>Game Logic</h4>
-                        A simple two-player Tic-Tac-Toe game playable through the Unix terminal
-                    </div>
-                </a>
-
-                <a href="https://github.com/karianjahi/myapps" target="_blank" id="several-apps" class="repo-link">
-                    <div id="django-several-apps" class="specific-project">
-                        <h4>Django Rest Multi-App project</h4>
-                        A Django REST API powered by PostgreSQL that manages artists, albums, directions, and EPL data.
-                        It demonstrates efficient relational data modeling, storage, and retrieval while showcasing best
-                        practices for building scalable, database-driven web APIs.
-                    </div>
-                </a>
-                <a href="https://github.com/karianjahi/movie_recommender_app" target="_blank" id="movie-repo"
-                    class="repo-link">
-                    <div id="movie-recommender" class="specific-project">
-                        <h4>Movie Recommender</h4>
-                        Recommends movies based on various statistical methods including clustering, PCA and
-                        Matrix Factorization
-                    </div>
-                </a>
-
-                <a href="https://github.com/karianjahi/music-album-collection" target="_blank"
-                    id="music-album-collection-link" class="repo-link">
-                    <div id="music-album-collection-container" class="specific-project">
-                        <h4>Music Album Collection</h4>
-                        <p>
-                            JavaScript Function-based project to manage, update, and maintain a music album collection
-                            stored as nested objects.
-                        </p>
-                    </div>
-                </a>
-                <a href="https://github.com/karianjahi/quiz-game" target="_blank" id="quiz-game-link" class="repo-link">
-                    <div id="quiz-game-container" class="specific-project">
-                        <h4>Quiz Game</h4>
-                        <p>
-                            A console quiz game where the computer attempts to guess answers from JSON objects with
-                            categories, questions, multiple choices, and correct answers.
-                        </p>
-                    </div>
-                </a>
-
-                <a href="https://github.com/karianjahi/sentence-maker" target="_blank" id="sentence-maker-link"
-                    class="repo-link">
-                    <div id="sentence-maker-container" class="specific-project">
-                        <h4>Sentence Maker</h4>
-                        <p>
-                            Sentence Maker - Turn Words into fun stories with JavaScript
-                        </p>
-                    </div>
-                </a>
-
-                <a href="https://github.com/karianjahi/javascript-trivia-bot" target="_blank"
-                    id="javascript-trivia-bot-link" class="repo-link">
-                    <div id="personal-portfolio-container" class="specific-project">
-                        <h4>Trivia Bot</h4>
-                        <p>
-                            variables, string concatenation, and console output: a fun way to learn JavaScript
-                            basics!
-                        </p>
-                    </div>
-                </a>
-                <a href="https://github.com/karianjahi/javascript-types-to-quality" target="_blank"
-                    id="javascript-types-to-quality-link" class="repo-link">
-                    <div id="personal-portfolio-container" class="specific-project">
-                        <h4>Code quality and JS fundamentals</h4>
-                        <p>
-                            A practice repo demonstrating JS fundamentals - objects, arrays, strings etc - through clean
-                            code
-                        </p>
-                    </div>
-                </a>
-                <a href="https://github.com/karianjahi/falsy-values-remover" target="_blank"
-                    id="javascript-falsy-values-remover-link" class="repo-link">
-                    <div id="falsy-values-remover-container" class="specific-project">
-                        <h4>Falsy Values Remover</h4>
-                        <p>
-                            A JavaScript utility that removes falsy values (false, 0, '', null, undefined, NaN) from
-                            arrays to practice filtering logic and clean code.
-                        </p>
-                    </div>
-                </a>
-                <a href="https://github.com/karianjahi/inventory-management-program" target="_blank"
-                    id="javascript-inventory-management-program-link" class="repo-link">
-                    <div id="inventory-management-program-container" class="specific-project">
-                        <h4>Inventory Tracking Program</h4>
-                        <p>
-                            An inventory tracker supporting basic operations like adding, finding, and removing products
-                        </p>
-                    </div>
-                </a>
-                <a href="https://github.com/karianjahi/unique-sorted-union" target="_blank"
-                    id="unique-sorted-union-link" class="repo-link">
-                    <div id="unique-sorted-union-container" class="specific-project">
-                        <h4>Unique Array Merging</h4>
-                        <p>
-                            Demonstrating argument objects and rest parameters in JavaScript by merging array items
-                            uniquely
-                        </p>
-                    </div>
-                </a>
-                <a href="https://github.com/karianjahi/DNA-pair-generator" target="_blank" id="DNA-pair-generator-link"
-                    class="repo-link">
-                    <div id="DNA-pair-generator-container" class="specific-project">
-                        <h4>DNA Pair Generator</h4>
-                        <p>
-                            This project converts a single DNA strand into its complementary base pairs, according to
-                            the natural pairing rules of DNA molecules.
-                        </p>
-                    </div>
-                </a>
-
-
-                <a href="https://github.com/karianjahi/story-telling-app" target="_blank" id="story-telling-app-link"
-                    class="repo-link">
-                    <div id="story-telling-app-container" class="specific-project">
-                        <h4>Story Telling App</h4>
-                        <p>
-                            A storytelling app where users click genre buttons to display short stories and dynamically
-                            update UI styles (border color + text).
-                        </p>
-                    </div>
-                </a>
-
-
-                <a href="https://github.com/karianjahi/emoji-reactor" target="_blank" id="emoji-reactor-link"
-                    class="repo-link">
-                    <div id="emoji-reactor-container" class="specific-project">
-                        <h4>Emoji Reactor</h4>
-                        <p>
-                            An interactive emoji rating UI where each emoji button increments its own score from 0/10 up
-                            to 10/10 using a reusable update function and click listeners.
-                        </p>
-                    </div>
-                </a>
-
-                <a href="https://github.com/karianjahi/favorite-icon-toggler" target="_blank"
-                    id="favorite-icon-toggler-link" class="repo-link">
-                    <div id="favorite-icon-toggler-container" class="specific-project">
-                        <h4>Favorite Icon Toggler</h4>
-                        <p>
-                            A simple UI where clicking a heart icon toggles between outlined and filled states, using
-                            class toggling and dynamic icon updates.
-                        </p>
-                    </div>
-                </a>
-
-                <a href="https://github.com/karianjahi/music-instrument-filter" target="_blank"
-                    id="music-instrument-filter-link" class="repo-link">
-                    <div id="music-instrument-filter-container" class="specific-project">
-                        <h4>Music Instrument Filter</h4>
-                        <p>
-                            A JavaScript project that filters and displays musical instruments by category using a
-                            dropdown menu, dynamic DOM updates, and innerHTML rendering.
-                        </p>
-                    </div>
-                </a>
-
-
-                <a href="https://github.com/karianjahi/real-time-character-counter" target="_blank"
-                    id="real-time-character-counter-link" class="repo-link">
-                    <div id="real-time-character-counter-container" class="specific-project">
-                        <h4>Real-Time Character Counter</h4>
-                        <p>
-                            A minimalist textarea app that counts characters in real time and enforces a 50-character
-                            limit with visual feedback when the limit is reached.
-                        </p>
-                    </div>
-                </a>
-
-
-
-
-            </div>
-        </div>
-        </div>
-
+    <section id="about" class="section about">
+      <div class="section-heading">
+        <p class="eyebrow">About Me</p>
+        <h2>From atmospheric science to AI-powered software.</h2>
+      </div>
+
+      <div class="about-card">
+        <p>
+          I am Joseph Njeri, a full-stack software developer and data scientist based in
+          Karlsruhe, Germany. My background combines machine learning, data engineering,
+          and modern web development, allowing me to create complete end-to-end solutions.
+        </p>
+
+        <p>
+          My academic background is in atmospheric science. I hold a Doctor of Natural
+          Sciences from the Karlsruhe Institute of Technology, where I researched the
+          diagnosis and simulation of extreme precipitation events over Kenya.
+        </p>
+
+        <p>
+          I have professional experience in predictive modeling, recommender systems,
+          image recognition, financial modeling, API development, PostgreSQL, MongoDB,
+          Django REST Framework, Flask, HTML, CSS, JavaScript, and React.
+        </p>
+
+        <p>
+          I am open to collaborations and opportunities at the intersection of data
+          science, AI, business intelligence, and full-stack software development.
+        </p>
+      </div>
     </section>
-    <section id="contact">
-        <h2>Contact Me</h2>
+
+    <section id="projects" class="section projects">
+      <div class="section-heading">
+        <p class="eyebrow">Selected Work</p>
+        <h2>Projects that show practical business value.</h2>
+      </div>
+
+      <div class="project-grid">
+        <a class="project-card featured" href="https://github.com/karianjahi/atlassian-app-analytics" target="_blank">
+          <span class="tag">Django • ML • Analytics</span>
+          <h3>Atlassian App Analytics</h3>
+          <p>
+            A Django analytics prototype for understanding customer behaviour,
+            product adoption, churn risk, and customer health for marketplace-style apps.
+          </p>
+          <span class="project-link">View GitHub →</span>
+        </a>
+
+        <a class="project-card featured" href="https://marketersparadise-production.up.railway.app/" target="_blank">
+          <span class="tag">Django • PostgreSQL • Chart.js</span>
+          <h3>Marketers Paradise</h3>
+          <p>
+            A marketing analytics platform for CSV upload, KPI calculation,
+            campaign filtering, interactive charts, and data export.
+          </p>
+          <span class="project-link">Live Demo →</span>
+        </a>
+
+        <a class="project-card" href="https://github.com/karianjahi/personal-portfolio" target="_blank">
+          <span class="tag">HTML • CSS</span>
+          <h3>Personal Portfolio</h3>
+          <p>A responsive portfolio website showcasing selected software and data projects.</p>
+          <span class="project-link">View GitHub →</span>
+        </a>
+
+        <a class="project-card" href="https://github.com/karianjahi/calorie-counter" target="_blank">
+          <span class="tag">JavaScript</span>
+          <h3>Calorie Counter</h3>
+          <p>A browser-based calorie tracker with dynamic form fields and clear/reset logic.</p>
+          <span class="project-link">View GitHub →</span>
+        </a>
+
+        <a class="project-card" href="https://github.com/karianjahi/simple-calculator" target="_blank">
+          <span class="tag">HTML • CSS Grid • JS</span>
+          <h3>Simple Calculator</h3>
+          <p>A responsive calculator supporting arithmetic, square root, decimals, and expression parsing.</p>
+          <span class="project-link">View GitHub →</span>
+        </a>
+
+        <a class="project-card" href="https://github.com/karianjahi/movie_recommender_app" target="_blank">
+          <span class="tag">Machine Learning</span>
+          <h3>Movie Recommender</h3>
+          <p>A recommendation app using statistical methods including clustering, PCA, and matrix factorization.</p>
+          <span class="project-link">View GitHub →</span>
+        </a>
+
+        <a class="project-card" href="https://github.com/karianjahi/compounding_investment" target="_blank">
+          <span class="tag">Django REST Framework</span>
+          <h3>Investment Returns App</h3>
+          <p>An API for calculating compound investment growth and long-term returns.</p>
+          <span class="project-link">View GitHub →</span>
+        </a>
+
+        <a class="project-card" href="https://github.com/karianjahi/regex-sandbox" target="_blank">
+          <span class="tag">JavaScript</span>
+          <h3>Regex Sandbox</h3>
+          <p>An interactive regex playground with flag support and highlighted results.</p>
+          <span class="project-link">View GitHub →</span>
+        </a>
+
+        <a class="project-card" href="https://github.com/karianjahi/theme-switcher" target="_blank">
+          <span class="tag">Accessibility</span>
+          <h3>Theme Switcher</h3>
+          <p>An accessible theme switcher using ARIA, CSS custom properties, and live-region updates.</p>
+          <span class="project-link">View GitHub →</span>
+        </a>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="contact-card">
+        <p class="eyebrow">Contact</p>
+        <h2>Let’s build something useful.</h2>
+
         <address>
-            <p>
-                Joseph Njeri
-            </p>
-            <p>
-                Elsa-Brändström-Str. 15a
-            </p>
-            <p>
-                76228 Karlsruhe-Durlach, Germany
-            </p>
-            <p>
-                Phone: <a href="tel:+491635155763" class="link">491635155763</a>
-            </p>
-            <p>
-                Email: <a href="maito:nkarianjahi@gmail.com" class="link">nkarianjahi@gmail.com</a>
-            </p>
+          <p>Joseph Njeri</p>
+          <p>Karlsruhe-Durlach, Germany</p>
+          <p><a href="tel:+491635155763">+49 163 5155763</a></p>
+          <p><a href="mailto:nkarianjahi@gmail.com">nkarianjahi@gmail.com</a></p>
         </address>
+      </div>
     </section>
+  </main>
 </body>
-
 </html>
