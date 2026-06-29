@@ -1,249 +1,202 @@
 <!DOCTYPE html>
+
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dr.rer.nat Joseph Njeri | Portfolio</title>
-
-    <link rel="stylesheet" href="styles.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dr.rer.nat Joseph Njeri | Portfolio</title>
+<link href="styles.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 </head>
-
 <body>
-    <header class="site-header">
-        <a href="#home" class="brand">
-            <!-- <img src="images/joseph-njeri-photo.jpeg" alt="Joseph Njeri profile photo" /> -->
-            <img src="images/joseph-profil-foto.jpg" alt="Joseph Njeri profile photo" />
-            <span>Joseph Njeri</span>
-        </a>
-
-        <nav class="main-nav">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-
-            <div class="dropdown">
-                <button class="dropbtn">Download CV ▾</button>
-                <div class="dropdown-menu">
-                    <a href="static/cv-english.pdf" download>English Version</a>
-                    <!-- <a href="static/cv-german.pdf" download>German Version</a> -->
-                    <a href="static/cv-german.pdf" download>German Version</a>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-    <main>
-        <section id="home" class="hero section">
-            <div class="hero-text">
-                <p class="eyebrow">Data Science • Full-Stack Development • AI</p>
-                <h1>Building intelligent web applications that turn data into decisions.</h1>
-
-                <p>
+<header class="site-header">
+<a class="brand" href="#home">
+<!-- <img src="images/joseph-njeri-photo.jpeg" alt="Joseph Njeri profile photo" /> -->
+<img alt="Joseph Njeri profile photo" src="images/joseph-profil-foto.jpg"/>
+<span>Joseph Njeri</span>
+</a>
+<nav class="main-nav">
+<a data-i18n="nav.home" href="#home">Home</a>
+<a data-i18n="nav.about" href="#about">About</a>
+<a data-i18n="nav.projects" href="#projects">Projects</a>
+<a data-i18n="contact.eyebrow" href="#contact">Contact</a>
+<div aria-label="Language switcher" class="language-switcher"><button class="lang-btn active" data-lang="en" type="button">EN</button><button class="lang-btn" data-lang="de" type="button">DE</button></div><div class="dropdown">
+<button class="dropbtn" data-i18n="cv.button">Download CV ▾</button>
+<div class="dropdown-menu">
+<a data-i18n="cv.en" download="" href="static/cv-english.pdf">English Version</a>
+<!-- <a href="static/cv-german.pdf" download>German Version</a> -->
+<a data-i18n="cv.de" download="" href="static/cv-german.pdf">German Version</a>
+</div>
+</div>
+</nav>
+</header>
+<main>
+<section class="hero section" id="home">
+<div class="hero-text">
+<p class="eyebrow" data-i18n="hero.eyebrow">Data Science • Full-Stack Development • AI</p>
+<h1 data-i18n="hero.title">Building intelligent web applications that turn data into decisions.</h1>
+<p data-i18n="hero.body">
                     Hi, I’m Joseph Njeri — a Data Scientist and Full-Stack Developer combining
                     machine learning, Django, Flask, JavaScript, PostgreSQL, and modern UI design
                     to build useful, data-driven applications.
                 </p>
-
-                <div class="hero-actions">
-                    <a href="#projects" class="btn primary">View Projects</a>
-                    <a href="#contact" class="btn secondary">Contact Me</a>
-                </div>
-            </div>
-
-            <div class="hero-image">
-                <img src="https://media.istockphoto.com/id/2210858896/photo/software-engineer-and-software-development-concepts-programming-for-various-devices-computer.jpg?s=1024x1024&w=is&k=20&c=uEUGnKpvgPOZhSdzF7NkcEgukPg60axR2RibI4m8pNs="
-                    alt="Software development workspace" />
-            </div>
-        </section>
-
-        <section id="about" class="section about">
-            <div class="section-heading">
-                <p class="eyebrow">About Me</p>
-                <h2>From atmospheric science to AI-powered software.</h2>
-            </div>
-
-            <div class="about-card">
-                <p>
+<div class="hero-actions">
+<a class="btn primary" data-i18n="hero.projects" href="#projects">View Projects</a>
+<a class="btn secondary" data-i18n="hero.contact" href="#contact">Contact Me</a>
+</div>
+</div>
+<div class="hero-image">
+<img alt="Software development workspace" src="https://media.istockphoto.com/id/2210858896/photo/software-engineer-and-software-development-concepts-programming-for-various-devices-computer.jpg?s=1024x1024&amp;w=is&amp;k=20&amp;c=uEUGnKpvgPOZhSdzF7NkcEgukPg60axR2RibI4m8pNs="/>
+</div>
+</section>
+<section class="section about" id="about">
+<div class="section-heading">
+<p class="eyebrow" data-i18n="about.eyebrow">About Me</p>
+<h2 data-i18n="about.title">From atmospheric science to AI-powered software.</h2>
+</div>
+<div class="about-card">
+<p data-i18n="about.p1">
                     I am Joseph Njeri, a full-stack software developer and data scientist based in
                     Karlsruhe, Germany. My background combines machine learning, data engineering,
                     and modern web development, allowing me to create complete end-to-end solutions.
                 </p>
-
-                <p>
+<p data-i18n="about.p2">
                     My academic background is in atmospheric science. I hold a Doctor of Natural
                     Sciences from the Karlsruhe Institute of Technology, where I researched the
                     diagnosis and simulation of extreme precipitation events over Kenya.
                 </p>
-
-                <p>
-                <p>
+<p data-i18n="about.p3">
+<p data-i18n="about.p3">
                     I have professional experience in predictive modeling, recommender systems,
                     operational analytics, machine learning, API development, PostgreSQL,
                     Django REST Framework, Flask, HTML, CSS, JavaScript, and modern cloud deployment.
                     My recent projects include customer analytics platforms, marketing intelligence
                     systems, and FleetIQ which is an AI-powered maritime operations platform. These apps are deployed on Railway.
                 </p>
-                </p>
-
-                <p>
+</p>
+<p data-i18n="about.p4">
                     I am open to collaborations and opportunities at the intersection of data
                     science, AI, business intelligence, and full-stack software development.
                 </p>
-            </div>
-        </section>
-
-        <section id="projects" class="section projects">
-            <div class="section-heading">
-                <p class="eyebrow">Selected Work</p>
-                <h2>Production-ready applications combining analytics, AI, and full-stack engineering.</h2>
-            </div>
-
-            <div class="project-grid">
-                <!-- Marketers Paradise -->
-                <div class="project-card featured">
-                    <span class="tag">Django • PostgreSQL • Chart.js</span>
-
-                    <h3>Marketers Paradise</h3>
-
-                    <p>
+</div>
+</section>
+<section class="section projects" id="projects">
+<div class="section-heading">
+<p class="eyebrow" data-i18n="work.eyebrow">Selected Work</p>
+<h2 data-i18n="work.title">Production-ready applications combining analytics, AI, and full-stack engineering.</h2>
+</div>
+<div class="project-grid">
+<!-- Marketers Paradise -->
+<div class="project-card featured">
+<span class="tag">Django • PostgreSQL • Chart.js</span>
+<h3>Marketers Paradise</h3>
+<p data-i18n="proj.mp.desc">
                         A full-stack marketing analytics platform for uploading campaign data,
                         calculating KPIs, visualizing performance, filtering records, and exporting results.
                     </p>
-
-                    <div class="project-links">
-                        <a class="project-link" href="https://marketersparadise-production.up.railway.app/"
-                            target="_blank" rel="noopener noreferrer">
+<div class="project-links">
+<a class="project-link" data-i18n="link.live" href="https://marketersparadise-production.up.railway.app/" rel="noopener noreferrer" target="_blank">
                             🚀 Live Demo
                         </a>
-
-                        <a class="project-link" href="https://github.com/karianjahi/marketers_paradise" target="_blank"
-                            rel="noopener noreferrer">
+<a class="project-link" data-i18n="link.github" href="https://github.com/karianjahi/marketers_paradise" rel="noopener noreferrer" target="_blank">
                             💻 View GitHub
                         </a>
-                    </div>
-                </div>
-
-                <!-- Atlassian App Analytics -->
-                <div class="project-card featured">
-                    <span class="tag">Django • Machine Learning • Analytics</span>
-
-                    <h3>Atlassian App Analytics</h3>
-
-                    <p>
+</div>
+</div>
+<!-- Atlassian App Analytics -->
+<div class="project-card featured">
+<span class="tag">Django • Machine Learning • Analytics</span>
+<h3>Atlassian App Analytics</h3>
+<p data-i18n="proj.aa.desc">
                         A SaaS analytics platform for monitoring customer health, feature adoption,
                         churn risk, and retention for Atlassian Marketplace applications.
                     </p>
-
-                    <div class="project-links">
-                        <a class="project-link" href="https://customerhealth-atlassian-app-analytics.up.railway.app/"
-                            target="_blank" rel="noopener noreferrer">
+<div class="project-links">
+<a class="project-link" data-i18n="link.live" href="https://customerhealth-atlassian-app-analytics.up.railway.app/" rel="noopener noreferrer" target="_blank">
                             🚀 Live Demo
                         </a>
-
-                        <a class="project-link" href="https://github.com/karianjahi/atlassian-app-analytics"
-                            target="_blank" rel="noopener noreferrer">
+<a class="project-link" data-i18n="link.github" href="https://github.com/karianjahi/atlassian-app-analytics" rel="noopener noreferrer" target="_blank">
                             💻 View GitHub
                         </a>
-                    </div>
-                </div>
-
-                <!-- FleetIQ -->
-                <div class="project-card featured">
-                    <span class="tag">Django • PostgreSQL • Machine Learning • Maritime Analytics</span>
-
-                    <h3>FleetIQ</h3>
-
-                    <p>
+</div>
+</div>
+<!-- FleetIQ -->
+<div class="project-card featured">
+<span class="tag">Django • PostgreSQL • Machine Learning • Maritime Analytics</span>
+<h3>FleetIQ</h3>
+<p data-i18n="proj.fi.desc">
                         An AI-powered maritime operations and fleet intelligence platform for vessel
                         monitoring, telemetry analytics, operational alert management, fleet health
                         scoring, and machine-learning-based vessel risk prediction.
                     </p>
-
-                    <div class="project-links">
-                        <a class="project-link" href="https://fleetiq-maritime.up.railway.app/" target="_blank"
-                            rel="noopener noreferrer">
+<div class="project-links">
+<a class="project-link" data-i18n="link.live" href="https://fleetiq-maritime.up.railway.app/" rel="noopener noreferrer" target="_blank">
                             🚀 Live Demo
                         </a>
-
-                        <a class="project-link" href="https://github.com/karianjahi/fleetiq" target="_blank"
-                            rel="noopener noreferrer">
+<a class="project-link" data-i18n="link.github" href="https://github.com/karianjahi/fleetiq" rel="noopener noreferrer" target="_blank">
                             💻 View GitHub
                         </a>
-                    </div>
-                </div>
-
-                <a class="project-card" href="https://github.com/karianjahi/personal-portfolio" target="_blank">
-                    <span class="tag">HTML • CSS</span>
-                    <h3>Personal Portfolio</h3>
-                    <p>A responsive portfolio website showcasing selected software and data projects.</p>
-                    <span class="project-link">View GitHub →</span>
-                </a>
-
-                <a class="project-card" href="https://github.com/karianjahi/calorie-counter" target="_blank">
-                    <span class="tag">JavaScript</span>
-                    <h3>Calorie Counter</h3>
-                    <p>A browser-based calorie tracker with dynamic form fields and clear/reset logic.</p>
-                    <span class="project-link">View GitHub →</span>
-                </a>
-
-                <a class="project-card" href="https://github.com/karianjahi/simple-calculator" target="_blank">
-                    <span class="tag">HTML • CSS Grid • JS</span>
-                    <h3>Simple Calculator</h3>
-                    <p>A responsive calculator supporting arithmetic, square root, decimals, and expression parsing.</p>
-                    <span class="project-link">View GitHub →</span>
-                </a>
-
-                <a class="project-card" href="https://github.com/karianjahi/movie_recommender_app" target="_blank">
-                    <span class="tag">Machine Learning</span>
-                    <h3>Movie Recommender</h3>
-                    <p>A recommendation app using statistical methods including clustering, PCA, and matrix
+</div>
+</div>
+<a class="project-card" href="https://github.com/karianjahi/personal-portfolio" target="_blank">
+<span class="tag">HTML • CSS</span>
+<h3>Personal Portfolio</h3>
+<p data-i18n="proj.portfolio.desc">A responsive portfolio website showcasing selected software and data projects.</p>
+<span class="project-link" data-i18n="link.github.arrow">View GitHub →</span>
+</a>
+<a class="project-card" href="https://github.com/karianjahi/calorie-counter" target="_blank">
+<span class="tag">JavaScript</span>
+<h3>Calorie Counter</h3>
+<p data-i18n="proj.cal.desc">A browser-based calorie tracker with dynamic form fields and clear/reset logic.</p>
+<span class="project-link" data-i18n="link.github.arrow">View GitHub →</span>
+</a>
+<a class="project-card" href="https://github.com/karianjahi/simple-calculator" target="_blank">
+<span class="tag">HTML • CSS Grid • JS</span>
+<h3>Simple Calculator</h3>
+<p data-i18n="proj.calc.desc">A responsive calculator supporting arithmetic, square root, decimals, and expression parsing.</p>
+<span class="project-link" data-i18n="link.github.arrow">View GitHub →</span>
+</a>
+<a class="project-card" href="https://github.com/karianjahi/movie_recommender_app" target="_blank">
+<span class="tag">Machine Learning</span>
+<h3>Movie Recommender</h3>
+<p data-i18n="proj.mov.desc">A recommendation app using statistical methods including clustering, PCA, and matrix
                         factorization.</p>
-                    <span class="project-link">View GitHub →</span>
-                </a>
-
-                <a class="project-card" href="https://github.com/karianjahi/compounding_investment" target="_blank">
-                    <span class="tag">Django REST Framework</span>
-                    <h3>Investment Returns App</h3>
-                    <p>An API for calculating compound investment growth and long-term returns.</p>
-                    <span class="project-link">View GitHub →</span>
-                </a>
-
-                <a class="project-card" href="https://github.com/karianjahi/regex-sandbox" target="_blank">
-                    <span class="tag">JavaScript</span>
-                    <h3>Regex Sandbox</h3>
-                    <p>An interactive regex playground with flag support and highlighted results.</p>
-                    <span class="project-link">View GitHub →</span>
-                </a>
-
-                <a class="project-card" href="https://github.com/karianjahi/theme-switcher" target="_blank">
-                    <span class="tag">Accessibility</span>
-                    <h3>Theme Switcher</h3>
-                    <p>An accessible theme switcher using ARIA, CSS custom properties, and live-region updates.</p>
-                    <span class="project-link">View GitHub →</span>
-                </a>
-            </div>
-        </section>
-
-        <section id="contact" class="section contact">
-            <div class="contact-card">
-                <p class="eyebrow">Contact</p>
-                <h2>Let’s build something useful.</h2>
-
-                <address>
-                    <p>Dr.rer.nat Joseph Njeri</p>
-                    <p>Elsa-Brändström-Str. 15a</p>
-                    <p>76228</p>
-                    <p>Karlsruhe-Durlach, Germany</p>
-                    <p><a href="tel:+491635155763">+49 163 5155763</a></p>
-                    <p><a href="mailto:nkarianjahi@gmail.com">nkarianjahi@gmail.com</a></p>
-                </address>
-            </div>
-        </section>
-    </main>
-</body>
-
+<span class="project-link" data-i18n="link.github.arrow">View GitHub →</span>
+</a>
+<a class="project-card" href="https://github.com/karianjahi/compounding_investment" target="_blank">
+<span class="tag">Django REST Framework</span>
+<h3>Investment Returns App</h3>
+<p data-i18n="proj.inv.desc">An API for calculating compound investment growth and long-term returns.</p>
+<span class="project-link" data-i18n="link.github.arrow">View GitHub →</span>
+</a>
+<a class="project-card" href="https://github.com/karianjahi/regex-sandbox" target="_blank">
+<span class="tag">JavaScript</span>
+<h3>Regex Sandbox</h3>
+<p data-i18n="proj.regex.desc">An interactive regex playground with flag support and highlighted results.</p>
+<span class="project-link" data-i18n="link.github.arrow">View GitHub →</span>
+</a>
+<a class="project-card" href="https://github.com/karianjahi/theme-switcher" target="_blank">
+<span class="tag">Accessibility</span>
+<h3>Theme Switcher</h3>
+<p data-i18n="proj.theme.desc">An accessible theme switcher using ARIA, CSS custom properties, and live-region updates.</p>
+<span class="project-link" data-i18n="link.github.arrow">View GitHub →</span>
+</a>
+</div>
+</section>
+<section class="section contact" id="contact">
+<div class="contact-card">
+<p class="eyebrow" data-i18n="contact.eyebrow">Contact</p>
+<h2 data-i18n="contact.title">Let’s build something useful.</h2>
+<address>
+<p>Dr.rer.nat Joseph Njeri</p>
+<p>Elsa-Brändström-Str. 15a</p>
+<p>76228</p>
+<p>Karlsruhe-Durlach, Germany</p>
+<p><a href="tel:+491635155763">+49 163 5155763</a></p>
+<p><a href="mailto:nkarianjahi@gmail.com">nkarianjahi@gmail.com</a></p>
+</address>
+</div>
+</section>
+</main>
+<script defer="True" src="language.js"></script></body>
 </html>
