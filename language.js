@@ -54,7 +54,7 @@ function setLanguage(lang) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  const savedLanguage = localStorage.getItem("portfolioLanguage") || "en";
+  const savedLanguage = localStorage.getItem("portfolioLanguage") || "de";
   setLanguage(savedLanguage);
 
   document.querySelectorAll(".lang-btn").forEach((button) => {
